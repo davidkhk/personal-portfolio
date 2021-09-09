@@ -1,2 +1,2 @@
-Personal portfolio
-My personal portfolio website showcasing my projects. Built from scratch using javascript, based on create-react-app. 
+# Personal portfolio
+My personal portfolio website showcasing my projects. Designed and built from scratch using javascript, based on create-react-app.
