@@ -6,7 +6,7 @@ function Footer(){
     return (
       <footer>
         <p><a href="https://github.com/davidkhk/personal-portfolio" target="_blank" rel="noreferrer">Designed & built by David Kang</a></p>
-        <p className="year">Copyright <FaRegCopyright /> {year}</p>
+        <p className="year"><FaRegCopyright /> {year}</p>
       </footer>
     )}
 

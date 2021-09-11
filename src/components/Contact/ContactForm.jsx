@@ -18,7 +18,7 @@ const ContactForm = () => {
       },
       body: JSON.stringify(details),
     });
-    setStatus("Submit");
+    setStatus("Send");
     let result = await response.json();
     alert(result.status);
   };

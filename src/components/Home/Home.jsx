@@ -9,7 +9,7 @@ return (
         <h1>David Kang</h1>
         <p>web developer</p>
       </div>
-      <a href="#work"><span className="arrow bounce"><FaAngleDown /></span></a>
+      <a href="#work" className="arrow bounce"><FaAngleDown /></a>
     </section>
 )
 }

@@ -50,9 +50,9 @@ let contactEmail = nodemailer.createTransport({
     };
     contactEmail.sendMail(mail, (error) => {
       if (error) {
-        res.json({ status: "Something went wrong, please try again." });
+        res.json({ status: "Oops! Something went wrong, please try again." });
       } else {
-        res.json({ status: "Thank you for your email!" });
+        res.json({ status: `Thank you, ${name}, for your email!` });
       }
     });
   });
