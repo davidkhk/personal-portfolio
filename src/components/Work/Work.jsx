@@ -1,6 +1,20 @@
 import React from "react";
+import styled from "styled-components"
 import Project from "./project";
 import projectsList from "./Projects-list"
+
+const Wrapper = styled.section`
+  background-color: var(--clr-light-blue);
+  color: var(--clr-navy);
+  padding-block: 4%;
+  width: 100%;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3%;
+  }
+`
 
 function createProject(projectsList) {
   return (
@@ -16,12 +30,12 @@ function createProject(projectsList) {
 
 function Work(){
     return(
-        <div id="work" className="section-work">
+        <Wrapper id="work">
             <h1>Work</h1>
-            <div className="projects-container">
+            <div>
               {projectsList.map(createProject)}
             </div>
-        </div>
+        </Wrapper>
     )
 }
 

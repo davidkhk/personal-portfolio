@@ -1,4 +1,46 @@
 import React, { useState } from "react";
+import styled from "styled-components";
+
+const StyledForm = styled.form`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  padding: 3%;
+
+  input, textarea {
+    color: var(--clr-red);
+    background-color: var(--clr-light-blue);
+    border: 1px solid var(--clr-navy);
+    width: 90%;
+    border-radius: 5px;
+    padding: 2% 3.5%;
+    margin: 0 auto 2.2% auto;
+    display: block;
+    text-align: center;
+    font-family: "futura";
+    font-size: 1.2rem;
+  }
+  button{
+    color: var(--clr-light-blue);
+    background-color: var(--clr-navy);
+    border: 1px solid var(--clr-navy);
+    width: 20%;
+    border-radius: 5px;
+    padding: 2.3% 3.4%;
+    margin: 0 auto 2.3% auto;
+    display: block;
+    text-align: center;
+    font-family: "futura";
+    font-size: 1.2rem;
+    transition: 0.3s;
+  }
+  button:hover {
+    color: var(--clr-yellow);
+    background: var(--clr-red);
+    border: 1px var(--clr-red) solid;
+}
+`
 
 const ContactForm = () => {
   const [status, setStatus] = useState("Send");
@@ -23,7 +65,7 @@ const ContactForm = () => {
     alert(result.status);
   };
   return (
-    <form onSubmit={handleSubmit} className="contact-form">
+    <StyledForm onSubmit={handleSubmit}>
       <div>
         <label htmlFor="name"></label>
         <input type="text" id="name" placeholder="What's yout name?" required />
@@ -37,7 +79,7 @@ const ContactForm = () => {
         <textarea id="message" placeholder="Type your message" rows="8" required />
       </div>
       <button type="submit">{status}</button>
-    </form>
+    </StyledForm>
   );
 };
 
