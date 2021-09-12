@@ -5,40 +5,38 @@ const StyledForm = styled.form`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 50%;
-  padding: 3%;
+  width: 60%;
+  margin-top: 2.5%;
 
   input, textarea {
-    color: var(--clr-red);
-    background-color: var(--clr-light-blue);
-    border: 1px solid var(--clr-navy);
-    width: 90%;
-    border-radius: 5px;
-    padding: 2% 3.5%;
-    margin: 0 auto 2.2% auto;
-    display: block;
+    color: var(--red);
+    background-color: var(--light-blue);
+    border: 1px solid var(--navy);
+    border-radius: var(--border-radius);
     text-align: center;
     font-family: "futura";
     font-size: 1.2rem;
-  }
+    padding-block: 1%;
+    width: 60%;
+    margin: 1% 0;
+}
   button{
-    color: var(--clr-light-blue);
-    background-color: var(--clr-navy);
-    border: 1px solid var(--clr-navy);
-    width: 20%;
-    border-radius: 5px;
-    padding: 2.3% 3.4%;
-    margin: 0 auto 2.3% auto;
-    display: block;
+    color: var(--light-blue);
+    background-color: var(--navy);
+    border: 1px solid var(--navy);
+    width: 15%;
+    height: 35px;
+    border-radius: var(--border-radius);
+    margin-bottom: 10%;
     text-align: center;
     font-family: "futura";
     font-size: 1.2rem;
     transition: 0.3s;
   }
   button:hover {
-    color: var(--clr-yellow);
-    background: var(--clr-red);
-    border: 1px var(--clr-red) solid;
+    color: var(--yellow);
+    background: var(--red);
+    border: 1px var(--red) solid;
 }
 `
 
@@ -66,18 +64,18 @@ const ContactForm = () => {
   };
   return (
     <StyledForm onSubmit={handleSubmit}>
-      <div>
+      <>
         <label htmlFor="name"></label>
         <input type="text" id="name" placeholder="What's yout name?" required />
-      </div>
-      <div>
+      </>
+      <>
         <label htmlFor="email"></label>
         <input type="email" id="email" placeholder="What's your email?" required />
-      </div>
-      <div>
+      </>
+      <>
         <label htmlFor="message"></label>
-        <textarea id="message" placeholder="Type your message" rows="8" required />
-      </div>
+        <textarea textarea id="message" placeholder="Type your message" rows="8" required />
+      </>
       <button type="submit">{status}</button>
     </StyledForm>
   );

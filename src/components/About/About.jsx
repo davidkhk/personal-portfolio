@@ -8,15 +8,15 @@ import { FaReact } from "react-icons/fa";
 import { FaWordpress } from "react-icons/fa";
 
 const Wrapper = styled.section`
-  background-color: var(--clr-navy);
-  color: var(--clr-light-blue);
+  background-color: var(--navy);
+  color: var(--light-blue);
   padding-block: 4%;
   width: 100%;
 
   div {
     display: flex;
     justify-content: center;
-    padding-top: 3%;
+    align-items: flex-start;
   }
   div div {  
     display: flex;
@@ -30,7 +30,6 @@ const Wrapper = styled.section`
   }
   li {
     padding: 5px 0;
-    font-size: 1.3rem;
   }
 `
 

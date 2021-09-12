@@ -4,16 +4,10 @@ import Project from "./project";
 import projectsList from "./Projects-list"
 
 const Wrapper = styled.section`
-  background-color: var(--clr-light-blue);
-  color: var(--clr-navy);
+  background-color: var(--light-blue);
+  color: var(--navy);
   padding-block: 4%;
   width: 100%;
-
-  div {
-    display: flex;
-    flex-direction: column;
-    padding-top: 3%;
-  }
 `
 
 function createProject(projectsList) {
@@ -32,9 +26,7 @@ function Work(){
     return(
         <Wrapper id="work">
             <h1>Work</h1>
-            <div>
-              {projectsList.map(createProject)}
-            </div>
+            {projectsList.map(createProject)}
         </Wrapper>
     )
 }

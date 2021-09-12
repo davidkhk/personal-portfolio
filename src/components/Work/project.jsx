@@ -2,27 +2,27 @@ import React from "react";
 import styled from "styled-components"
 
 const Wrapper = styled.div`
-  border: 1px var(--clr-navy) dotted;
-  border-radius: 5px;
+  border: 1px var(--navy) dotted;
+  border-radius: var(--border-radius);
   display: flex;
   justify-content: space-between;
-  margin: 3%;
+  margin: 2% 5%;
 
   div {
-    width: 50%;
     margin: 2%;
   }
+
   ul {
     padding: 0;
     margin: 0;
   }
   li {
     display: inline-block;
-    border: 1px var(--clr-navy) dotted;
-    border-radius: 5px;
+    border: 1px var(--navy) dotted;
+    border-radius: var(--border-radius);
     text-align: center;
     margin-right: 1%;
-    padding: 4px;
+    padding: 3px;
   }
   img {
     width: 50%;
@@ -30,18 +30,18 @@ const Wrapper = styled.div`
   }
   a {
     text-decoration: none;
-    color: var(--clr-light-blue);
-    border: 1px var(--clr-yellow) dotted;
-    background: var(--clr-navy);
+    color: var(--light-blue);
+    border: 1px var(--yellow) dotted;
+    background: var(--navy);
     margin-right: 5px;
     padding: 5px;
-    border-radius: 5px;
+    border-radius: var(--border-radius);
     transition: 0.3s;
   }
     a:hover {
-    background-color: var(--clr-yellow);
-    color: var(--clr-red);
-    border: 1px var(--clr-navy) dotted;
+    background-color: var(--yellow);
+    color: var(--red);
+    border: 1px var(--navy) dotted;
 }
 `
 

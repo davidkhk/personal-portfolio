@@ -1,6 +1,5 @@
 import React from "react";
 import styled, { css } from "styled-components"
-import variables from "../../variables";
 import { FaRegFilePdf } from "react-icons/fa";
 import ResumeFile from "../resume.pdf";
 
@@ -24,13 +23,14 @@ const StyledNav = styled.nav`
     margin: 0.1% 0 0 0;
   }
   a {
-    color: var(--clr-navy);
+    color: var(--navy);
     text-decoration: none;
     transition: 0.3s;
   }
   a:hover {
-    color: var(--clr-yellow);
-    background: var(--clr-red);
+    color: var(--yellow);
+    background: var(--red);
+    border-radius: var(--border-radius);
 }
 `
 const StyledLi = styled.li`
@@ -41,7 +41,7 @@ const StyledLi = styled.li`
     ${props =>
     props.resume &&
     css`
-      border: 1px dotted var(--navy-blue);
+      border: 1px dotted var(--navy);
       border-radius: 5px;
     `};
 `

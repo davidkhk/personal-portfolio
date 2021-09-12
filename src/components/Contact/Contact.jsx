@@ -1,14 +1,13 @@
 import React from "react";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import ContactForm from "./ContactForm"
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaAngellist } from "react-icons/fa";
-import { FaAngleUp } from "react-icons/fa";
 
 const Wrapper = styled.section`
-  background-color: var(--clr-light-blue);
-  color: var(--clr-navy);
+  background-color: var(--light-blue);
+  color: var(--navy);
   display: flex;
   flex-direction: column;
   align-items:center;
@@ -22,28 +21,17 @@ const Wrapper = styled.section`
     display: flex;
     justify-content: space-between;
     width: 20%;
-    margin: 3%;
   }
-  `
-  const StyledA = styled.a`
-    color: var(--clr-navy);
-    font-size: 2rem;
+  
+  a {
+    color: var(--navy);
+    font-size: 1.5rem;
     transition: 0.3s;
 
-    a:hover {
-    color: var(--clr-red);
+    :hover {
+    color: var(--red);
     }
-
-    ${props =>
-    props.arrow &&
-    css`
-    -moz-animation: bounce 2s infinite;
-    -webkit-animation: bounce 2s infinite;
-    font-size: 1rem;
-    animation: bounce 2s infinite;
-    color: var(--clr-navy);
-    padding-top: 5%;
-    `};
+  }
 `
 
 function Contact(){
@@ -54,11 +42,10 @@ function Contact(){
             <p>Feel free to get in touch!</p>
             <ContactForm />
             <div>
-              <StyledA href="https://github.com/davidkhk" target="_blank" rel="noreferrer" className="icon"><FaGithub /></StyledA>
-              <StyledA href="https://www.linkedin.com/in/davidkhk/" target="_blank" rel="noreferrer" className="icon"><FaLinkedinIn /></StyledA>
-              <StyledA href="https://angel.co/u/davidkhk" target="_blank" rel="noreferrer" className="icon"><FaAngellist /></StyledA>
+              <a href="https://github.com/davidkhk" target="_blank" rel="noreferrer" className="icon"><FaGithub /></a>
+              <a href="https://www.linkedin.com/in/davidkhk/" target="_blank" rel="noreferrer" className="icon"><FaLinkedinIn /></a>
+              <a href="https://angel.co/u/davidkhk" target="_blank" rel="noreferrer" className="icon"><FaAngellist /></a>
             </div>
-            <StyledA arrow href="#home"><FaAngleUp /></StyledA>
         </Wrapper>
     )
 }

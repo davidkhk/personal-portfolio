@@ -15,7 +15,8 @@
     "react-icons": "^4.2.0",
     "react-scripts": "4.0.3",
     "styled-components": "^5.3.1",
-    "web-vitals": "^1.1.2"
+    "web-vitals": "^1.1.2",
+    "webfontloader": "^1.6.28"
   },
   "scripts": {
     "start": "react-scripts start",
