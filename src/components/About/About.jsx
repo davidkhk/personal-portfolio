@@ -8,8 +8,8 @@ import { FaReact } from "react-icons/fa";
 import { FaWordpress } from "react-icons/fa";
 
 const Wrapper = styled.section`
-  background-color: var(--navy);
-  color: var(--light-blue);
+  background-color: var(--clr-navy-blue);
+  color: var(--clr-light-blue);
   padding-block: 4%;
   width: 100%;
 
@@ -38,12 +38,12 @@ return (
     <Wrapper id="about">
       <h1>About me</h1>
       <div>
-        <div inner>
+        <div>
         <p>Son of Korean immigrant parents, born and raised in São Paulo, Brazil. Lived in New York City for 7 years studying finance at CUNY - Baruch College and working in consulting.</p>
         <p>Self taught programmer, I'm currently back in São Paulo freelancing as a software engineer.</p>
         <p>Aside from coding, I'm interested in entrepreneurship (opened a coffee shop business in 2020), specialty coffee and travelling (visited 10+ countries).</p>
         </div>
-        <div inner>
+        <div>
         <p>Skills:</p>
         <ul>
           <li><FaHtml5 /> HTML</li>

@@ -9,9 +9,9 @@ const StyledForm = styled.form`
   margin-top: 2.5%;
 
   input, textarea {
-    color: var(--red);
-    background-color: var(--light-blue);
-    border: 1px solid var(--navy);
+    color: var(--clr-red);
+    background-color: var(--clr-light-blue);
+    border: 1px solid var(--clr-navy-blue);
     border-radius: var(--border-radius);
     text-align: center;
     font-family: "futura";
@@ -21,9 +21,9 @@ const StyledForm = styled.form`
     margin: 1% 0;
 }
   button{
-    color: var(--light-blue);
-    background-color: var(--navy);
-    border: 1px solid var(--navy);
+    color: var(--clr-light-blue);
+    background-color: var(--clr-navy-blue);
+    border: 1px solid var(--clr-navy-blue);
     width: 15%;
     height: 35px;
     border-radius: var(--border-radius);
@@ -34,9 +34,9 @@ const StyledForm = styled.form`
     transition: 0.3s;
   }
   button:hover {
-    color: var(--yellow);
-    background: var(--red);
-    border: 1px var(--red) solid;
+    color: var(--clr-yellow);
+    background: var(--clr-red);
+    border: 1px var(--clr-red) solid;
 }
 `
 

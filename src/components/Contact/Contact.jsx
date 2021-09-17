@@ -6,8 +6,8 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaAngellist } from "react-icons/fa";
 
 const Wrapper = styled.section`
-  background-color: var(--light-blue);
-  color: var(--navy);
+  background-color: var(--clr-light-blue);
+  color: var(--clr-navy-blue);
   display: flex;
   flex-direction: column;
   align-items:center;
@@ -24,12 +24,12 @@ const Wrapper = styled.section`
   }
   
   a {
-    color: var(--navy);
+    color: var(--clr-navy-blue);
     font-size: 1.5rem;
     transition: 0.3s;
 
     :hover {
-    color: var(--red);
+    color: var(--clr-red);
     }
   }
 `

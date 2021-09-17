@@ -4,8 +4,8 @@ import Project from "./project";
 import projectsList from "./Projects-list"
 
 const Wrapper = styled.section`
-  background-color: var(--light-blue);
-  color: var(--navy);
+  background-color: var(--clr-light-blue);
+  color: var(--clr-navy-blue);
   padding-block: 4%;
   width: 100%;
 `

@@ -7,7 +7,7 @@ const projectsList = [
         title: "Frapp & Co.",
         techStack: "...",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        image: <img src={Iceland} alt="..." />,
+        image: `${Iceland}`,
         seeLive:"https://github.com/davidkhk/personal-portfolio",
         sourceCode:"https://github.com/davidkhk/personal-portfolio"
     },

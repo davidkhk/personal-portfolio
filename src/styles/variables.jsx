@@ -2,10 +2,10 @@ import { css } from "styled-components";
 
 const variables = css`
   :root {
-    --yellow: #f0dcbe;
-    --navy: #22577A;
-    --light-blue: #E8F6EF;
-    --red: #6f0721;
+    --clr-yellow: #FFFEB7;
+    --clr-navy-blue: #22577A;
+    --clr-light-blue: #EDFFEC;
+    --clr-red: #6f0721;
 
     --border-radius: 5px;
   }

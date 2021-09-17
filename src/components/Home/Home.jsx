@@ -3,21 +3,24 @@ import styled from "styled-components"
 import { FaAngleDown } from "react-icons/fa";
 
 const Wrapper = styled.section`
-  background-color: var(--navy);
-  width: 100%;
+  background-color: var(--clr-navy-blue);
   height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-
+  align-items: center;
+  
   div {
     display: flex;
     flex-direction: column;
+    margin-inline: 15%;
+    padding-bottom: 5%;
+  }
+  h3 {
+    margin: 0;
   }
   h1 {
-    text-shadow: 3px 3px var(--red);
-    font-size: 5rem;
+    text-shadow: 3px 3px var(--clr-red);
+    font-size: 4rem;
     text-align: left;
   }
   p {
@@ -31,7 +34,7 @@ const Wrapper = styled.section`
     animation: bounce 2s infinite;
     position: absolute;
     bottom: 2%;
-    color: var(--yellow);
+    color: var(--clr-yellow);
     -moz-animation: bounce 2s infinite;
     -webkit-animation: bounce 2s infinite;
     animation: bounce 2s infinite;
