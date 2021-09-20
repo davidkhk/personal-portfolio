@@ -4,10 +4,28 @@ import styled from "styled-components"
 const Wrapper = styled.div`
   border: 1px var(--clr-navy-blue) dotted;
   border-radius: var(--border-radius);
-  display: flex;
-  justify-content: space-between;
   margin: 2% 5%;
+  display: flex;
+  flex-direction: row;
 
+  img {
+    margin: 2%;
+    width: 50%;
+  }
+
+  @media (max-width: 600px) {
+    flex-wrap: wrap;
+    
+    img {
+      width: 100%;
+      margin: 2%;
+    }
+  }
+  `
+
+const StyledDiv = styled.div`
+  margin-inline: 2%;
+  
   ul {
     padding: 0;
     margin: 0;
@@ -28,36 +46,26 @@ const Wrapper = styled.div`
     margin-right: 5px;
     padding: 5px;
     border-radius: var(--border-radius);
-    transition: 0.3s;
+    transition: all .2s ease-in;
   }
     a:hover {
-    background-color: var(--clr-yellow);
-    color: var(--clr-red);
-    border: 1px var(--clr-navy-blue) dotted;
-}
-    div {
-    border: 1px solid red;
-    margin: 1%;
-    width: 45%;
-}
-
-    img {
-    border: 1px solid green;
-    margin: 2%;
-    width: 50%;
+    background-color: var(--clr-red);
+    color: var(--clr-yellow);
+    border: 1px var(--clr-yellow) dotted;
 }
 `
+
 
 function Project(props){
   return (
     <Wrapper>
-      <div>
+      <StyledDiv>
         <h2>{props.title}</h2>
         {props.techStack}
         <p>{props.description}</p>
         <a href={props.seeLive} target="_blank" rel="noreferrer">See live</a>
         <a href={props.sourceCode} target="_blank" rel="noreferrer">Source code</a>
-      </div>
+      </StyledDiv>
       <img src={props.image} alt="..."/>
     </Wrapper>
 )}

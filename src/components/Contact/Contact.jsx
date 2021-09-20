@@ -1,9 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import ContactForm from "./ContactForm"
-import { FaGithub } from "react-icons/fa";
-import { FaLinkedinIn } from "react-icons/fa";
-import { FaAngellist } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn, FaAngellist } from "react-icons/fa";
 
 const Wrapper = styled.section`
   background-color: var(--clr-light-blue);

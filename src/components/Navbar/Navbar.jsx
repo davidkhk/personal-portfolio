@@ -1,116 +1,113 @@
 import React, { useState } from "react";
 import styled, { css } from "styled-components"
-import { FaRegFilePdf } from "react-icons/fa";
-import { FaBars } from "react-icons/fa";
-import { FaAngleDoubleDown } from "react-icons/fa";
+import { useSpring, animated } from "react-spring";
+import { FaRegFilePdf, FaBars, FaAngleDoubleDown } from "react-icons/fa";
 import ResumeFile from "../resume.pdf";
 
-const StyledHeader = styled.header`
-@media screen and (max-width: 600px) {
-  nav {
-    display: flex;
-    align-items: flex-start
-  }
-  nav ul {
-    font-size: 1.2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: space-evenly;
-    height: 100vh;
-  }
-  div {
-    display: flex;
-  }
-  #resume {
-    font-size: 1rem;
-    display: flex;
-    position: absolute;
-    top: 12px;
-    right: 40px;
-}
-}
-`
-
-const StyledNav = styled.nav`
-  display: flex;
+const AnimatedNav = styled(animated.nav)`
   position: fixed;
   width: 100%;
-  background-color: var(--clr-light-blue);
-  align-items: center;
+  display: flex;
   justify-content: space-between;
-  
-  h4 {
-    color: var(--clr-red); 
-    margin: 10px;
-    text-shadow: 3px 3px var(--clr-yellow);
-    font-size: 1.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: var(--clr-light-blue);
+
+  @media (max-width: 600px) {
+    #resume {
+    position: absolute;
+    right: 15%;
+    top: 8px;
   }
-  ul {
-    display: flex;
-    list-style-type: none;
-    align-items: center;
-    margin: 0;
-    padding: 0;
   }
-  a {
-    color: var(--clr-navy-blue);
-    display: block;
-    text-decoration: none;
-    transition: 0.3s;
+`;
+
+const Logo = styled.h4`
+  color: var(--clr-red); 
+  margin: .5rem;
+  text-shadow: 3px 3px var(--clr-yellow);
+  font-size: 1.5rem;
+`;
+
+const Hamburger = styled.div`
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  color: var(--clr-navy-blue);
+  font-size: 1.5rem;
+  padding-inline: 1rem;
+
+  @media (max-width: 600px) {
+      display: flex;
   }
-  a:hover {
+`;
+
+const Menu = styled.div`
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+
+  @media (max-width: 600px) {
+      overflow: hidden;
+      flex-direction: column;
+      width: 100%;
+      padding-bottom: ${({isOpen}) => (isOpen ? ".5rem" : "0")};
+      max-height: ${({isOpen}) => (isOpen ? "300px" : "0")};
+      transition: max-height .3s ease-in;
+  }
+`;
+
+const MenuLinks = styled.a`
+  margin-inline: .5rem;
+  padding: .3rem;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--clr-navy-blue);
+  transition: all .2s ease-in;
+ 
+  &:hover {
     color: var(--clr-yellow);
     background: var(--clr-red);
     border-radius: var(--border-radius);
 }
-`
-const StyledLi = styled.li`
-    display: flex;
-    padding: 4px;
-    margin-inline: 15px;
 
-    ${props =>
+  ${props =>
     props.resume &&
     css`
       border: 1px dotted var(--clr-navy-blue);
       border-radius: var(--border-radius);
-    `};
-`
+    `}
+`;
 
-const HambugerIcon = styled.div`
-    display: none;
-    color: var(--clr-navy-blue);
-    font-size: 1.8rem;
-    position: absolute;
-    right: 10px;
-    top: 11px;
-`
+function Navbar() {
+    const [isOpen, setIsOpen] = useState(false)
+    
+    function handleClick() {
+        setIsOpen(!isOpen)
+    };
 
+    const props = useSpring({
+      from: {opacity: 0},
+      to: {opacity: 1},
+      delay: 1500,
+      config: {duration: 500}
+    });
 
-function Navbar(){
-  const [clicked, setClicked] = useState(false)
-  const [isOpen, SetIsOpen] = useState(false);
-
-  function handleClick() {
-    setClicked(!clicked);
-    SetIsOpen(!isOpen);
-  };
-
-  return (
-      <StyledHeader>
-        <StyledNav>
-          <h4>DK.</h4>
-          <HambugerIcon onClick={handleClick}>{clicked ? <FaAngleDoubleDown/> : <FaBars/>}</HambugerIcon>
-          <ul>
-            <StyledLi as="a" href="#home">HOME</StyledLi>
-            <StyledLi as="a" href="#work">WORK</StyledLi>
-            <StyledLi as="a" href="#about">ABOUT</StyledLi>
-            <StyledLi as="a" href="#contact">CONTACT</StyledLi>
-            <StyledLi resume id="resume" as="a" href={ResumeFile} target="_blank" rel="noreferrer">RESUME <FaRegFilePdf /></StyledLi>
-          </ul>
-        </StyledNav>
-      </StyledHeader>
-)}
+    return(
+      <AnimatedNav style={props} >
+        <Logo>DK.</Logo>
+        <Hamburger onClick={handleClick}>
+        {isOpen ? <FaAngleDoubleDown/> : <FaBars/>}
+        </Hamburger>
+        <Menu isOpen={isOpen}>
+          <MenuLinks href="#home">HOME</MenuLinks>
+          <MenuLinks href="#work">WORK</MenuLinks>
+          <MenuLinks href="#about">ABOUT</MenuLinks>
+          <MenuLinks href="#contact">CONTACT</MenuLinks>
+        </Menu>
+        <MenuLinks resume id="resume" href={ResumeFile} target="_blank" rel="noreferrer">RESUME <FaRegFilePdf /></MenuLinks>
+      </AnimatedNav>
+    );
+}
 
 export default Navbar;
