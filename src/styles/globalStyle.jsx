@@ -1,5 +1,5 @@
-import { createGlobalStyle } from "styled-components";
-import variables from "./variables";
+import { createGlobalStyle } from 'styled-components';
+import variables from './variables';
 
 const GlobalStyle = createGlobalStyle`
   ${variables};
@@ -24,13 +24,12 @@ const GlobalStyle = createGlobalStyle`
     scroll-behavior: smooth;
 }
   body {
-    font-family: "futura", 'Open Sans', sans-serif;
+    font-family: 'futura', 'Open Sans', sans-serif;
     color: var(--clr-secondary1);
     margin: 0;
 }
   h1 {
-    text-align: center;
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 `
 

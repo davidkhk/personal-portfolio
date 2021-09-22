@@ -1,9 +1,12 @@
-import React from "react";
-import styled from "styled-components"
-import Project from "./project";
-import projectsList from "./projects-list"
+import React from 'react';
+import styled from 'styled-components';
+import Project from './project';
+import projectsList from './projects-list';
 
 const Wrapper = styled.section`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: var(--clr-primary2);
   color: var(--clr-primary1);
   padding-block: 4%;
@@ -24,7 +27,7 @@ function createProject(projectsList) {
 
 function Work(){
     return(
-        <Wrapper id="work">
+        <Wrapper id='work'>
             <h1>Work</h1>
             {projectsList.map(createProject)}
         </Wrapper>

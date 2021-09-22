@@ -1,7 +1,7 @@
-import React from "react";
-import styled from "styled-components"
-import { useSpring, animated } from "react-spring";
-import { FaAngleDown } from "react-icons/fa";
+import React from 'react';
+import styled from 'styled-components';
+import { useSpring, animated } from 'react-spring';
+import { FaAngleDown } from 'react-icons/fa';
 
 const Wrapper = styled.section`
   background-color: var(--clr-primary1);
@@ -16,10 +16,7 @@ const Wrapper = styled.section`
     animation: bounce 2s infinite;
     position: absolute;
     bottom: 2%;
-    color: var(--clr-seconday1);
-    -moz-animation: bounce 2s infinite;
-    -webkit-animation: bounce 2s infinite;
-    animation: bounce 2s infinite;
+    color: var(--clr-secondary1);
   }
   @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
@@ -49,6 +46,10 @@ const StyledDiv = styled.div`
   }
 `;
 
+const AnimatedGreetings = styled(animated.h3)`
+  margin-bottom: 10%;
+`;
+
 const AnimatedHeader = styled(animated.h1)`
     display: flex;
     text-shadow: 3px 3px var(--clr-secondary2);
@@ -67,13 +68,9 @@ const AnimatedDot = styled(animated.h1)`
     top: 10px;
 
     @media(max-width: 600px) {
-      margin: 65px 60px 0 0;
+      margin-top: 0;
     }
 `
-
-const AnimatedGreetings = styled(animated.h3)`
-  margin-bottom: 20%;
-`;
 
 function Home(){
   const propsGreetings = useSpring({
@@ -97,13 +94,13 @@ function Home(){
   });
 
   return (
-    <Wrapper id="home">
+    <Wrapper id='home'>
       <StyledDiv>
         <AnimatedGreetings style={propsGreetings}>Hi there! My name is</AnimatedGreetings>
         <AnimatedHeader style={propsHeader}>David Kang<AnimatedDot style={propsDot}>.</AnimatedDot></AnimatedHeader>
         <AnimatedTitle style={propsTitle}>web developer</AnimatedTitle>
       </StyledDiv>
-      <a href="#work"><FaAngleDown /></a>
+      <a href='#work'><FaAngleDown /></a>
     </Wrapper>
 )
 }

@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components"
-import { FaHtml5, FaCss3Alt, FaJsSquare, FaNodeJs, FaReact, FaWordpress, FaCaretRight } from "react-icons/fa";
+import React from 'react';
+import styled from 'styled-components';
+import { FaHtml5, FaCss3Alt, FaJsSquare, FaNodeJs, FaReact, FaWordpress, FaCaretRight } from 'react-icons/fa';
 
 const Wrapper = styled.section`
   display: flex;
@@ -27,13 +27,13 @@ const Container1 = styled.div`
     flex-direction: column;
     width: 40%;
 
-    p {
-      margin-block: 0;
-    }
-
-    @media (max-height: 600px) {
+    @media (max-width: 600px) {
       width: 100%;
       margin-bottom: 10%;
+    }
+
+    p {
+      margin-block: 0;
     }
   `
 
@@ -44,7 +44,6 @@ const Container1 = styled.div`
 
   const StyledList = styled.div `
     padding: 0;
-    margin: 0 0 5% 0;
     align-content: flex-start;
 
     p {
@@ -70,7 +69,7 @@ const Container1 = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 80%;
+    width: 60%;
 
     ul {
       margin: 0;
@@ -80,15 +79,14 @@ const Container1 = styled.div`
       list-style-type: none;
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 800px) {
       flex-direction: column;
-      margin: 5%;
     }
   `
 
 function About(){
 return (
-    <Wrapper id="about">
+    <Wrapper id='about'>
       <h1>About me</h1>
       <Container1>
         <StyledBio>

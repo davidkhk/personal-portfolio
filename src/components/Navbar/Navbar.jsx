@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import styled, { css } from "styled-components";
-import { useSpring, animated } from "react-spring";
-import { FaRegFilePdf, FaBars, FaAngleDoubleDown } from "react-icons/fa";
-import ResumeFile from "../resume.pdf";
+import React, { useState } from 'react';
+import styled, { css } from 'styled-components';
+import { useSpring, animated } from 'react-spring';
+import { FaRegFilePdf, FaBars, FaAngleDoubleDown } from 'react-icons/fa';
+import ResumeFile from '../resume.pdf';
 
 const AnimatedNav = styled(animated.nav)`
   position: fixed;
@@ -51,8 +51,8 @@ const Menu = styled.div`
       overflow: hidden;
       flex-direction: column;
       width: 100%;
-      padding-bottom: ${({isOpen}) => (isOpen ? ".5rem" : "0")};
-      max-height: ${({isOpen}) => (isOpen ? "300px" : "0")};
+      padding-bottom: ${({isOpen}) => (isOpen ? '.5rem' : '0')};
+      max-height: ${({isOpen}) => (isOpen ? '300px' : '0')};
       transition: max-height .3s ease-in;
   }
 `;
@@ -100,12 +100,12 @@ function Navbar() {
         {isOpen ? <FaAngleDoubleDown/> : <FaBars/>}
         </Hamburger>
         <Menu isOpen={isOpen}>
-          <MenuLinks href="#home">HOME</MenuLinks>
-          <MenuLinks href="#work">WORK</MenuLinks>
-          <MenuLinks href="#about">ABOUT</MenuLinks>
-          <MenuLinks href="#contact">CONTACT</MenuLinks>
+          <MenuLinks href='#home'>HOME</MenuLinks>
+          <MenuLinks href='#work'>WORK</MenuLinks>
+          <MenuLinks href='#about'>ABOUT</MenuLinks>
+          <MenuLinks href='#contact'>CONTACT</MenuLinks>
         </Menu>
-        <MenuLinks resume id="resume" href={ResumeFile} target="_blank" rel="noreferrer">RESUME <FaRegFilePdf /></MenuLinks>
+        <MenuLinks resume id='resume' href={ResumeFile} target='_blank' rel='noreferrer'>RESUME <FaRegFilePdf /></MenuLinks>
       </AnimatedNav>
     );
 }

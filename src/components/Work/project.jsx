@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components"
+import React from 'react';
+import styled from 'styled-components';
 
 const Wrapper = styled.div`
   border: 1px var(--clr-primary1) dotted;
@@ -49,7 +49,7 @@ const StyledDiv = styled.div`
     transition: all .2s ease-in;
   }
     a:hover {
-    background-color: var(--clr-secondary2;
+    background-color: var(--clr-secondary2);
     color: var(--clr-secondary1);
     border: 1px var(--clr-secondary1) dotted;
 }
@@ -63,10 +63,10 @@ function Project(props){
         <h2>{props.title}</h2>
         {props.techStack}
         <p>{props.description}</p>
-        <a href={props.seeLive} target="_blank" rel="noreferrer">See live</a>
-        <a href={props.sourceCode} target="_blank" rel="noreferrer">Source code</a>
+        <a href={props.seeLive} target='_blank' rel='noreferrer'>See live</a>
+        <a href={props.sourceCode} target='_blank' rel='noreferrer'>Source code</a>
       </StyledDiv>
-      <img src={props.image} alt="..."/>
+      <img src={props.image} alt='...'/>
     </Wrapper>
 )}
 
