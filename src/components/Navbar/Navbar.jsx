@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styled, { css } from "styled-components"
+import styled, { css } from "styled-components";
 import { useSpring, animated } from "react-spring";
 import { FaRegFilePdf, FaBars, FaAngleDoubleDown } from "react-icons/fa";
 import ResumeFile from "../resume.pdf";
@@ -11,7 +11,7 @@ const AnimatedNav = styled(animated.nav)`
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  background-color: var(--clr-light-blue);
+  background-color: var(--clr-primary2);
 
   @media (max-width: 600px) {
     #resume {
@@ -23,9 +23,9 @@ const AnimatedNav = styled(animated.nav)`
 `;
 
 const Logo = styled.h4`
-  color: var(--clr-red); 
+  color: var(--clr-secondary2);
   margin: .5rem;
-  text-shadow: 3px 3px var(--clr-yellow);
+  text-shadow: 3px 3px var(--clr-secondary1);
   font-size: 1.5rem;
 `;
 
@@ -33,7 +33,7 @@ const Hamburger = styled.div`
   display: none;
   flex-direction: column;
   cursor: pointer;
-  color: var(--clr-navy-blue);
+  color: var(--clr-primary1);
   font-size: 1.5rem;
   padding-inline: 1rem;
 
@@ -62,19 +62,19 @@ const MenuLinks = styled.a`
   padding: .3rem;
   cursor: pointer;
   text-decoration: none;
-  color: var(--clr-navy-blue);
+  color: var(--clr-primary1);
   transition: all .2s ease-in;
  
   &:hover {
-    color: var(--clr-yellow);
-    background: var(--clr-red);
+    color: var(--clr-secondary1);
+    background: var(--clr-secondary2);
     border-radius: var(--border-radius);
 }
 
   ${props =>
     props.resume &&
     css`
-      border: 1px dotted var(--clr-navy-blue);
+      border: 1px dotted var(--clr-primary1);
       border-radius: var(--border-radius);
     `}
 `;

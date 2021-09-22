@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components"
 
 const Wrapper = styled.div`
-  border: 1px var(--clr-navy-blue) dotted;
+  border: 1px var(--clr-primary1) dotted;
   border-radius: var(--border-radius);
   margin: 2% 5%;
   display: flex;
@@ -32,7 +32,7 @@ const StyledDiv = styled.div`
   }
   li {
     display: inline-block;
-    border: 1px var(--clr-navy-blue) dotted;
+    border: 1px var(--clr-primary1) dotted;
     border-radius: var(--border-radius);
     text-align: center;
     margin-right: 1%;
@@ -40,18 +40,18 @@ const StyledDiv = styled.div`
   }
   a {
     text-decoration: none;
-    color: var(--clr-light-blue);
-    border: 1px var(--clr-yellow) dotted;
-    background: var(--clr-navy-blue);
+    color: var(--clr-primary2);
+    border: 1px var(--clr-secondary1) dotted;
+    background: var(--clr-primary1);
     margin-right: 5px;
     padding: 5px;
     border-radius: var(--border-radius);
     transition: all .2s ease-in;
   }
     a:hover {
-    background-color: var(--clr-red);
-    color: var(--clr-yellow);
-    border: 1px var(--clr-yellow) dotted;
+    background-color: var(--clr-secondary2;
+    color: var(--clr-secondary1);
+    border: 1px var(--clr-secondary1) dotted;
 }
 `
 

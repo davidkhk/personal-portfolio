@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import ContactForm from "./ContactForm"
+import ContactForm from "./contactForm"
 import { FaGithub, FaLinkedinIn, FaAngellist } from "react-icons/fa";
 
 const Wrapper = styled.section`
-  background-color: var(--clr-light-blue);
-  color: var(--clr-navy-blue);
+  background-color: var(--clr-primary2);
+  color: var(--clr-primary1);
   display: flex;
   flex-direction: column;
   align-items:center;
@@ -15,22 +15,28 @@ const Wrapper = styled.section`
   p {
     margin: 2px;
   }
-  div {
-    display: flex;
-    justify-content: space-between;
-    width: 20%;
-  }
-  
   a {
-    color: var(--clr-navy-blue);
+    color: var(--clr-primary1);
     font-size: 1.5rem;
     transition: 0.3s;
 
     :hover {
-    color: var(--clr-red);
+    color: var(--clr-seconday2);
     }
   }
 `
+
+  const IconsContainer = styled.div`
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+
+    @media (max-width: 600px) {
+      width: 50%;
+    }
+`
+  
+
 
 function Contact(){
     return(
@@ -39,11 +45,11 @@ function Contact(){
             <p>Have a question or just want to say hi?</p>
             <p>Feel free to get in touch!</p>
             <ContactForm />
-            <div>
+            <IconsContainer>
               <a href="https://github.com/davidkhk" target="_blank" rel="noreferrer" className="icon"><FaGithub /></a>
               <a href="https://www.linkedin.com/in/davidkhk/" target="_blank" rel="noreferrer" className="icon"><FaLinkedinIn /></a>
               <a href="https://angel.co/u/davidkhk" target="_blank" rel="noreferrer" className="icon"><FaAngellist /></a>
-            </div>
+            </IconsContainer>
         </Wrapper>
     )
 }

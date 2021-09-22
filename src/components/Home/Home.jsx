@@ -4,7 +4,7 @@ import { useSpring, animated } from "react-spring";
 import { FaAngleDown } from "react-icons/fa";
 
 const Wrapper = styled.section`
-  background-color: var(--clr-navy-blue);
+  background-color: var(--clr-primary1);
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -16,7 +16,7 @@ const Wrapper = styled.section`
     animation: bounce 2s infinite;
     position: absolute;
     bottom: 2%;
-    color: var(--clr-yellow);
+    color: var(--clr-seconday1);
     -moz-animation: bounce 2s infinite;
     -webkit-animation: bounce 2s infinite;
     animation: bounce 2s infinite;
@@ -51,7 +51,7 @@ const StyledDiv = styled.div`
 
 const AnimatedHeader = styled(animated.h1)`
     display: flex;
-    text-shadow: 3px 3px var(--clr-red);
+    text-shadow: 3px 3px var(--clr-secondary2);
     font-size: 4rem;
     text-align: left;
 `;
@@ -62,9 +62,13 @@ const AnimatedTitle = styled(animated.p)`
     text-align: left;
 `;
 const AnimatedDot = styled(animated.h1)`
-    text-shadow: 3px 3px var(--clr-red);
+    text-shadow: 3px 3px var(--clr-secondary2);
     font-size: 2.5rem;
     top: 10px;
+
+    @media(max-width: 600px) {
+      margin: 65px 60px 0 0;
+    }
 `
 
 const AnimatedGreetings = styled(animated.h3)`

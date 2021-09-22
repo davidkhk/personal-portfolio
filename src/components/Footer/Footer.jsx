@@ -5,21 +5,21 @@ import { FaRegCopyright } from "react-icons/fa";
 const StyledFooter = styled.footer`
   text-align: center;
   justify-content: center;
-  background-color: var(--clr-light-blue);
-  border-top: 1px var(--clr-navy-blue) solid;
-  color: var(--clr-navy-blue);
+  background-color: var(--clr-primary2);
+  border-top: 1px var(--clr-primary1) solid;
+  color: var(--clr-primary1);
   padding-block: 1%;
 
   a {
-    color: var(--clr-navy-blue);
+    color: var(--clr-primary1);
     text-decoration: none;
-    transition: 0.3s;
+    padding: 2px;
+    transition: all 0.3s ease-in;
   }
   a:hover {
-    color: var(--clr-yellow);
-    background: var(--clr-red);
+    color: var(--clr-seconday1);
+    background: var(--clr-seconday2);
     border-radius: var(--border-radius);
-    padding: 2px;
   }
 `
 

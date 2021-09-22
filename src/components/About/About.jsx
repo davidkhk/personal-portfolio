@@ -6,12 +6,12 @@ const Wrapper = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--clr-navy-blue);
-  color: var(--clr-light-blue);
+  background-color: var(--clr-primary1);
+  color: var(--clr-primary2);
   padding-block: 4%;
 `
 
-const StyledDiv = styled.div`
+const Container1 = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -19,7 +19,7 @@ const StyledDiv = styled.div`
 
     @media (max-width: 600px) {
       flex-direction: column;
-      margin: 10%;
+      margin: 10% 10% 0 10%;
     }
 `
  const StyledBio = styled.div`
@@ -37,10 +37,10 @@ const StyledDiv = styled.div`
     }
   `
 
-const StyledSpan = styled.span`
+  const Bold = styled.span`
     font-weight: 600;
     line-height: 1.5rem;
-`
+  `
 
   const StyledList = styled.div `
     padding: 0;
@@ -55,7 +55,7 @@ const StyledSpan = styled.span`
       padding: 0;
     }
     li {
-      list-style-type:none;
+      list-style-type: none;
       padding: 5px 0;
       margin: 0;
     }
@@ -66,7 +66,7 @@ const StyledSpan = styled.span`
       }
     }
   `
-  const StyledSoftSkills = styled.div`
+  const Container2 = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -90,11 +90,11 @@ function About(){
 return (
     <Wrapper id="about">
       <h1>About me</h1>
-      <StyledDiv>
+      <Container1>
         <StyledBio>
-        <p>Born and raised in <StyledSpan>São Paulo, Brazil</StyledSpan>. Earned a BBA degree in <StyledSpan>Finance at CUNY-Baruch College</StyledSpan> (New York City). Worked in consulting for 3 years.</p><br/>
-        <p>Self taught programmer, currently <StyledSpan>freelancing as a web developer.</StyledSpan></p><br/>
-        <p>Aside from coding, I'm interested in <StyledSpan>entrepreneurship</StyledSpan>, opened a mini coffee shop business in 2020.</p>
+        <p>Born and raised in <Bold>São Paulo, Brazil</Bold>. Earned a BBA degree in <Bold>Finance at CUNY-Baruch College</Bold> (New York City). Worked in consulting for 3 years.</p><br/>
+        <p>Self taught programmer, currently <Bold>freelancing as a web developer.</Bold></p><br/>
+        <p>Aside from coding, I'm interested in <Bold>entrepreneurship</Bold>, opened a mini coffee shop business in 2020.</p>
         </StyledBio>
         <StyledList>
         <p>Technical skills:</p>
@@ -107,9 +107,9 @@ return (
           <li><FaWordpress /> Wordpress</li>
         </ul>
         </StyledList>
-      </StyledDiv>
+      </Container1>
       <p>Soft skills:</p>
-      <StyledSoftSkills>
+      <Container2>
       <div>
       <p>As a finance consultant:</p>
       <ul>
@@ -120,7 +120,7 @@ return (
       </ul>
       </div>
       <div>
-      <p>As a self taught programmer:</p>
+      <p>As a self taught developer:</p>
       <ul>      
         <li><FaCaretRight/> Ability to learn</li>
         <li><FaCaretRight/> Developed curiousity</li>
@@ -139,7 +139,7 @@ return (
         <li><FaCaretRight/> Efficiency</li>
       </ul>
       </div>
-      </StyledSoftSkills>
+      </Container2>
     </Wrapper>
 )
 }

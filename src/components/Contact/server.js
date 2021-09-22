@@ -19,7 +19,7 @@ let contactEmail = nodemailer.createTransport({
       clientId: process.env.OAUTH_CLIENTID,
       clientSecret: process.env.OAUTH_CLIENT_SECRET,
       refreshToken: process.env.OAUTH_REFRESH_TOKEN,
-    },
+    }
    });
   
   contactEmail.verify((error) => {

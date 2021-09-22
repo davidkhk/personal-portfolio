@@ -12,12 +12,12 @@ const GlobalStyle = createGlobalStyle`
    height: 8px;
 }
   *::-webkit-scrollbar-track {
-   background: var(--clr-light-blue);
+   background: var(--clr-primary2);
 }
   *::-webkit-scrollbar-thumb {
-   background-color: var(--clr-yellow);
+   background-color: var(--clr-secondary1);
    border-radius: var(--border-radius);
-   border: 1px solid var(--clr-red);
+   border: 1px solid var(--clr-secondary2);
 }
 
   html {
@@ -25,7 +25,7 @@ const GlobalStyle = createGlobalStyle`
 }
   body {
     font-family: "futura", 'Open Sans', sans-serif;
-    color: var(--clr-yellow);
+    color: var(--clr-secondary1);
     margin: 0;
 }
   h1 {

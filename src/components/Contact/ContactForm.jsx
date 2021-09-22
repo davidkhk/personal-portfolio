@@ -9,34 +9,39 @@ const StyledForm = styled.form`
   margin-top: 2.5%;
 
   input, textarea {
-    color: var(--clr-red);
-    background-color: var(--clr-light-blue);
-    border: 1px solid var(--clr-navy-blue);
+    color: var(--clr-secondary2);
+    background-color: var(--clr-primary2);
+    border: 1px solid var(--clr-primary1);
     border-radius: var(--border-radius);
     text-align: center;
     font-family: "futura";
-    font-size: 1.2rem;
     padding-block: 1%;
     width: 60%;
-    margin: 1% 0;
+    margin: 0.5% 0;
+    :focus {
+    outline-width: 0;
+  }
 }
   button{
-    color: var(--clr-light-blue);
-    background-color: var(--clr-navy-blue);
-    border: 1px solid var(--clr-navy-blue);
+    color: var(--clr-primary2);
+    background-color: var(--clr-primary1);
+    border: 1px solid var(--clr-primary1);
     width: 15%;
-    height: 35px;
+    height: 30px;
     border-radius: var(--border-radius);
     margin-bottom: 10%;
     text-align: center;
     font-family: "futura";
-    font-size: 1.2rem;
     transition: 0.3s;
   }
   button:hover {
-    color: var(--clr-yellow);
-    background: var(--clr-red);
-    border: 1px var(--clr-red) solid;
+    color: var(--clr-seconday1);
+    background: var(--clr-seconday2);
+    border: 1px var(--clr-seconday2) solid;
+}
+
+@media (max-width: 600px) {
+  width: 100%;
 }
 `
 
