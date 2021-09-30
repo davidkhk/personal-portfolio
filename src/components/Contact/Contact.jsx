@@ -4,8 +4,7 @@ import ContactForm from './contactForm';
 import { FaGithub, FaLinkedinIn, FaAngellist } from 'react-icons/fa';
 
 const Wrapper = styled.section`
-  background-color: var(--clr-primary2);
-  color: var(--clr-primary1);
+  background-image: linear-gradient(to bottom, #284e78, #1e4266, #153654, #0e2b43, #082032);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,12 +15,12 @@ const Wrapper = styled.section`
     margin: 2px;
   }
   a {
-    color: var(--clr-primary1);
+    color: var(--clr-secondary2);
     font-size: 1.5rem;
     transition: 0.3s;
 
     :hover {
-    color: var(--clr-secondary2);
+    color: var(--clr-secondary1);
     }
   }
 `

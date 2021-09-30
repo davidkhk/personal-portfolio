@@ -25,7 +25,7 @@ const GlobalStyle = createGlobalStyle`
 }
   body {
     font-family: 'futura', 'Open Sans', sans-serif;
-    color: var(--clr-secondary1);
+    color: var(--clr-secondary2);
     margin: 0;
 }
   h1 {

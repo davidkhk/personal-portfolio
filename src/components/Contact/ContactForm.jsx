@@ -23,13 +23,13 @@ const StyledForm = styled.form`
   }
   
   ::placeholder {
-      color: var(--clr-primary1);
+      color: var(--clr-secondary1);
     }
 }
   button{
-    color: var(--clr-primary2);
+    color: var(--clr-secondary2);
     background-color: var(--clr-primary1);
-    border: 1px solid var(--clr-primary1);
+    border: 1px solid var(--clr-secondary2);
     width: 15%;
     height: 30px;
     border-radius: var(--border-radius);
@@ -39,9 +39,9 @@ const StyledForm = styled.form`
     transition: 0.3s;
   }
   button:hover {
-    color: var(--clr-secondary1);
-    background: var(--clr-secondary2);
-    border: 1px var(--clr-secondary2) solid;
+    color: var(--clr-secondary2);
+    background: var(--clr-secondary1);
+    border: 1px var(--clr-secondary1) solid;
 }
 
 @media (max-width: 600px) {

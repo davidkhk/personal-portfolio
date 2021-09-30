@@ -4,7 +4,7 @@ import { useSpring, animated } from 'react-spring';
 import { FaAngleDown } from 'react-icons/fa';
 
 const Wrapper = styled.section`
-  background-color: var(--clr-primary1);
+  background-image: linear-gradient(to bottom, #082032, #0e2b43, #153654, #1e4266, #284e78);
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -52,23 +52,27 @@ const AnimatedGreetings = styled(animated.h3)`
 
 const AnimatedHeader = styled(animated.h1)`
     display: flex;
-    text-shadow: 3px 3px var(--clr-secondary2);
+    text-shadow: 3px 3px var(--clr-secondary1);
     font-size: 4rem;
     text-align: left;
 `;
 
 const AnimatedTitle = styled(animated.p)`
-    margin-top: -2rem;
+    margin-top: -1.5rem;
     font-style: italic;
     text-align: left;
 `;
 const AnimatedDot = styled(animated.h1)`
-    text-shadow: 3px 3px var(--clr-secondary2);
+    text-shadow: 3px 3px var(--clr-secondary1);
     font-size: 2.5rem;
     top: 10px;
 
     @media(max-width: 600px) {
       margin-top: 0;
+    }
+    @media(max-width: 450px) {
+      width: 100%;
+      padding-top: 65px;
     }
 `
 
@@ -98,7 +102,7 @@ function Home(){
       <StyledDiv>
         <AnimatedGreetings style={propsGreetings}>Hi there! My name is</AnimatedGreetings>
         <AnimatedHeader style={propsHeader}>David Kang<AnimatedDot style={propsDot}>.</AnimatedDot></AnimatedHeader>
-        <AnimatedTitle style={propsTitle}>web developer</AnimatedTitle>
+        <AnimatedTitle style={propsTitle}>front end web developer</AnimatedTitle>
       </StyledDiv>
       <a href='#work'><FaAngleDown /></a>
     </Wrapper>

@@ -1,5 +1,5 @@
 import React from 'react';
-import Iceland from '../../Images/iceland.gif';
+import Iceland from '../../images/iceland.gif';
 
 const projectsList = [
     {
