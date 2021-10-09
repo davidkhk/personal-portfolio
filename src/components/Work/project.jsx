@@ -64,6 +64,7 @@ function Project(props){
     <Wrapper>
       <StyledDiv>
         <h2>{props.title}</h2>
+        <p>{props.subtitle}</p>
         <div>{props.techStack}</div>
         <p>{props.description}</p>
         <StyledLinks href={props.seeLive} target='_blank' rel='noreferrer'>See live</StyledLinks>

@@ -4,7 +4,7 @@ import { useSpring, animated } from 'react-spring';
 import { FaAngleDown } from 'react-icons/fa';
 
 const Wrapper = styled.section`
-  background-image: linear-gradient(to bottom, #082032, #0e2b43, #153654, #1e4266, #284e78);
+  background: linear-gradient(to bottom, #082032, #0e2b43, #153654, #1e4266, #284e78);
   height: 100vh;
   display: flex;
   justify-content: center;

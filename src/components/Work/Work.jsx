@@ -16,6 +16,7 @@ function createProject(projectsList) {
   return (
   <Project 
     title={projectsList.title}
+    subtitle={projectsList.subtitle}
     techStack={projectsList.techStack}
     description={projectsList.description}
     image={projectsList.image}

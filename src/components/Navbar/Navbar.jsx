@@ -16,7 +16,7 @@ const AnimatedNav = styled(animated.nav)`
   @media (max-width: 600px) {
     #resume {
     position: absolute;
-    right: 15%;
+    right: 10%;
     top: 8px;
   }
   }
