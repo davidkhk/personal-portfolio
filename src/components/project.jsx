@@ -60,6 +60,7 @@ const StyledLinks = styled.a`
 
 
 function Project(props){
+  
   return (
     <Wrapper>
       <StyledDiv>
@@ -67,8 +68,8 @@ function Project(props){
         <p>{props.subtitle}</p>
         <div>{props.techStack}</div>
         <p>{props.description}</p>
-        <StyledLinks href={props.seeLive} target='_blank' rel='noreferrer'>See live</StyledLinks>
-        <StyledLinks href={props.sourceCode} target='_blank' rel='noreferrer'>Source code</StyledLinks>
+        <StyledLinks href={props.seeLiveLink} target='_blank' rel='noreferrer'>{props.seeLive}</StyledLinks>
+        <StyledLinks href={props.sourceCodeLink} target='_blank' rel='noreferrer'>{props.sourceCode}</StyledLinks>
       </StyledDiv>
       <img src={props.image} alt='...'/>
     </Wrapper>

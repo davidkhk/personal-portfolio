@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styled, { css } from 'styled-components';
 import { useSpring, animated } from 'react-spring';
 import { FaRegFilePdf, FaBars, FaAngleDoubleDown } from 'react-icons/fa';
-import ResumeFile from '../resume.pdf';
+import ResumeFile from '../images/resume.pdf';
 
 const AnimatedNav = styled(animated.nav)`
   position: fixed;

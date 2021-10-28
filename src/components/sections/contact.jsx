@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import ContactForm from './contactForm';
-import { FaGithub, FaLinkedinIn, FaAngellist } from 'react-icons/fa';
+import ContactForm from '../contactForm';
 
 const Wrapper = styled.section`
   background-image: linear-gradient(to bottom, #284e78, #1e4266, #153654, #0e2b43, #082032);
@@ -25,18 +24,6 @@ const Wrapper = styled.section`
   }
 `
 
-  const IconsContainer = styled.div`
-    display: flex;
-    justify-content: space-between;
-    width: 20%;
-
-    @media (max-width: 600px) {
-      width: 50%;
-    }
-`
-  
-
-
 function Contact(){
     return(
         <Wrapper id='contact'>
@@ -44,11 +31,6 @@ function Contact(){
             <p>Have a question or just want to say hi?</p>
             <p>Feel free to get in touch!</p>
             <ContactForm />
-            <IconsContainer>
-              <a href='https://github.com/davidkhk' target='_blank' rel='noreferrer' className='icon'><FaGithub /></a>
-              <a href='https://www.linkedin.com/in/davidkhk/' target='_blank' rel='noreferrer' className='icon'><FaLinkedinIn /></a>
-              <a href='https://angel.co/u/davidkhk' target='_blank' rel='noreferrer' className='icon'><FaAngellist /></a>
-            </IconsContainer>
         </Wrapper>
     )
 }
