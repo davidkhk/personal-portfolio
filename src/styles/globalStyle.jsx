@@ -1,5 +1,8 @@
 import { createGlobalStyle } from 'styled-components';
 import variables from './variables';
+import FuturaBold from "../fonts/FuturaLT-Bold.woff";
+import FuturaLT from "../fonts/FuturaLT.woff";
+import FuturaOblique from "../fonts/FuturaLT-BookOblique.woff";
 
 const GlobalStyle = createGlobalStyle`
   ${variables};
@@ -20,15 +23,29 @@ const GlobalStyle = createGlobalStyle`
    border: 1px solid var(--clr-secondary2);
 }
 
+@font-face {
+  font-family: 'FuturaBold';
+  src: url(${FuturaBold}) format('woff');
+}
+@font-face {
+  font-family: 'FuturaLT';
+  src: url(${FuturaLT}) format('woff');
+}
+@font-face {
+  font-family: 'FuturaOblique';
+  src: url(${FuturaOblique}) format('woff');
+}
+
   html {
     scroll-behavior: smooth;
 }
   body {
-    font-family: 'futura', 'Open Sans', sans-serif;
+    font-family: 'FuturaLT';
     color: var(--clr-secondary2);
     margin: 0;
 }
   h1 {
+    font-family: 'FuturaBold';
     font-size: 3rem;
 }
 `

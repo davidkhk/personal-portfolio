@@ -34,14 +34,18 @@ const Wrapper = styled.section`
 const StyledDiv = styled.div`
   display: flex;
   flex-direction: column;
-  margin-inline: 15%;
+  width: 35%;
+  height: auto;
 
   @media (max-width: 600px) {
+    width: 50%;
+    margin-left: 60px;
+    
     h3 {
-      font-size: 1rem;
+      font-size: .8rem;
     }
     h1 {
-      font-size: 3rem;
+      font-size: 2.8rem;
     }
   }
 `;
@@ -50,31 +54,22 @@ const AnimatedGreetings = styled(animated.h3)`
   margin-bottom: 10%;
 `;
 
-const AnimatedHeader = styled(animated.h1)`
+const AnimatedName = styled(animated.div)`
     display: flex;
     text-shadow: 3px 3px var(--clr-secondary1);
     font-size: 4rem;
     text-align: left;
 `;
 
+const AnimatedDot = styled(animated.h1)`
+`;
+
 const AnimatedTitle = styled(animated.p)`
+    font-family: 'FuturaOblique';
     margin-top: -1.5rem;
     font-style: italic;
     text-align: left;
 `;
-const AnimatedDot = styled(animated.h1)`
-    text-shadow: 3px 3px var(--clr-secondary1);
-    font-size: 2.5rem;
-    top: 10px;
-
-    @media(max-width: 600px) {
-      margin-top: 0;
-    }
-    @media(max-width: 450px) {
-      width: 100%;
-      padding-top: 65px;
-    }
-`
 
 function Home(){
   const propsGreetings = useSpring({
@@ -84,16 +79,18 @@ function Home(){
   const propsHeader = useSpring({
     from: {opacity: 0, x: -500},
     to: {opacity: 1, x: 0},
-    delay: 500
+    delay: 1000
   });
   const propsTitle = useSpring({
     from: {opacity: 0, marginBottom: -500},
     to: {opacity: 1, marginBottom: 0},
-    delay: 1000
+    delay: 1500
   });
   const propsDot = useSpring({
     from: {opacity: 0},
     to: {opacity: 1},
+    config: {duration: 500},
+    delay: 2000,
     loop: true
   });
 
@@ -101,8 +98,11 @@ function Home(){
     <Wrapper id='home'>
       <StyledDiv>
         <AnimatedGreetings style={propsGreetings}>Hi there! My name is</AnimatedGreetings>
-        <AnimatedHeader style={propsHeader}>David Kang<AnimatedDot style={propsDot}>.</AnimatedDot></AnimatedHeader>
-        <AnimatedTitle style={propsTitle}>front end web developer</AnimatedTitle>
+        <AnimatedName style={propsHeader}>
+          <h1>David Kang</h1>
+          <AnimatedDot style={propsDot}>.</AnimatedDot>
+        </AnimatedName>
+        <AnimatedTitle style={propsTitle}>software developer</AnimatedTitle>
       </StyledDiv>
       <a href='#work'><FaAngleDown /></a>
     </Wrapper>

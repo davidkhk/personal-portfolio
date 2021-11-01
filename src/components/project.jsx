@@ -15,6 +15,7 @@ const Wrapper = styled.div`
   }
 
   @media (max-width: 800px) {
+    margin: 10%;
     flex-wrap: wrap;
     
     img {
@@ -37,8 +38,12 @@ const StyledDiv = styled.div`
     border: 1px var(--clr-secondary2) solid;
     border-radius: var(--border-radius);
     text-align: center;
-    margin-right: 1%;
+    margin: 3px 3px 3px 0;
     padding: 3px;
+  }
+
+  @media (max-width: 800px) {
+    margin: 2%;
   }
 `
 const StyledLinks = styled.a`

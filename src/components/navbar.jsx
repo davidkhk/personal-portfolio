@@ -16,7 +16,7 @@ const AnimatedNav = styled(animated.nav)`
   @media (max-width: 600px) {
     #resume {
     position: absolute;
-    right: 10%;
+    right: 12%;
     top: 8px;
   }
   }
@@ -87,7 +87,7 @@ function Navbar() {
     const props = useSpring({
       from: {opacity: 0},
       to: {opacity: 1},
-      delay: 1500,
+      delay: 2000,
       config: {duration: 500}
     });
 

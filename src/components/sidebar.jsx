@@ -22,7 +22,8 @@ a {
   }
 
 @media (max-width: 600px) {
-  width: 50%;
+  bottom: 8%;
+  left: 1.8%;
 }
 `
 
@@ -30,7 +31,7 @@ function Sidebar() {
     const props = useSpring({
         from: {opacity: 0},
         to: {opacity: 1},
-        delay: 1500,
+        delay: 2000,
         config: {duration: 500}
       });
     
