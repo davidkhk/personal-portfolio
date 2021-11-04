@@ -22,7 +22,7 @@ const AnimatedNav = styled(animated.nav)`
   }
 `;
 
-const Logo = styled.h4`
+const Logo = styled.h1`
   margin: .5rem;
   text-shadow: 3px 3px var(--clr-secondary1);
   font-size: 1.5rem;
