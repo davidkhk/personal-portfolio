@@ -1,15 +1,15 @@
 import React from 'react';
-import Frapp from '../images/frapp-thumbnail.jpg';
-import Mudax from '../images/covid19.jpeg';
-import PersonalPortfolio from '../images/personal-portfolio.gif';
+import Frapp from '../assets/frapp-thumbnail.jpg';
+import Mudax from '../assets/covid19.jpeg';
+import PersonalPortfolio from '../assets/personal-portfolio.gif';
 
 const projectsData = [
     {
         key: 1,
         title: 'Frapp & Co.',
-        subtitle: 'Coffee shop business WordPress e-commerce website',
-        techStack: <ul><li>HTML</li><li>CSS</li><li>JS</li><li>REACT</li></ul>,
-        description: 'Learned how to develop a WordPress theme from scratch using React (front-end) and WordPress (back-end).',
+        subtitle: 'Coffee shop e-commerce website',
+        techStack: <ul><li>HTML</li><li>CSS</li><li>JAVASCRIPT</li><li>REACT</li><li>NODE.JS</li></ul>,
+        description: <p>Built this ecommerce website from scratch using React. On the ecommerce part, I used Commercejs' API to handle the back-end, and Stripe's API to handle the payment process.<br/><br/> Other tools used: Material UI, Cors, Express, Nodemailer, styled-components.</p>,
         image: `${Frapp}`,
         seeLive: 'See Live',
         sourceCode: 'Source Code',
@@ -21,7 +21,7 @@ const projectsData = [
         title: 'Mudax - Comércio de EPI',
         subtitle: 'WordPress e-commerce website',
         techStack: <ul><li>HTML</li><li>CSS</li></ul>,
-        description: 'The challenege was to build an e-commerce website as quicly as possible. Using and customizing a theme on WordPress, I built this e-commerce and the client was selling products in no time.',
+        description: <p>Built this ecommerce website from an existing theme on WordPress. The challenge was to deliver a modern and functional ecommerce website as quickly as possible.</p>,
         image: `${Mudax}`,
         seeLive: 'See Live',
         sourceCode: <s>Source Code</s>,
@@ -30,9 +30,9 @@ const projectsData = [
     },{
         key: 3,
         title: 'Personal portfolio',
-        subtitle: 'My personal portfolio showcasing my work and projects',
-        techStack: <ul><li>HTML</li><li>CSS</li><li>JS</li><li>REACT</li><li>NODE.JS</li><li>EXPRESS.JS</li></ul>,
-        description: 'My first project as a web developer. Designed and built from scratch, the challenge was to put in practice everything I learned and build a modern and fully responsive personal portfolio that clearly showcases my projects, skills and personality.',
+        subtitle: 'My personal portfolio showcasing my projects',
+        techStack: <ul><li>HTML</li><li>CSS</li><li>JAVASCRIPT</li><li>REACT</li><li>NODE.JS</li></ul>,
+        description: <p>My first project as a software engineer. Designed and built from scratch using React, the challenge was to put in practice everything I learned and build a modern and fully responsive personal portfolio that clearly showcases my projects, skills and personality.<br/><br/>Other tools used: Cors, Express, Nodemailer, Spring, Styled-components</p>,
         image: `${PersonalPortfolio}`,
         seeLive: 'See Live',
         sourceCode: 'Source Code',

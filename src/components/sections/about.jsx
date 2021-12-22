@@ -6,8 +6,8 @@ const Wrapper = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: linear-gradient(to bottom, #082032, #0e2b43, #153654, #1e4266, #284e78);
-  padding-block: 4%;
+  background-image: linear-gradient(to bottom, #a1cae2, #b6d1e8, #c8d8ec, #d9e0ef, #e7e9f2, #ededf3, #f2f1f5, #f6f6f6, #f6f6f6, #f6f6f6, #f6f6f6, #f6f6f6);  height: 100vh;
+  padding-top: 4%;
 `
 
 const Container1 = styled.div`
@@ -97,7 +97,7 @@ return (
         <StyledBio>
         <p>Born and raised in <BoldClrSecondary1>São Paulo, Brazil</BoldClrSecondary1>. Earned a BBA degree in <BoldClrSecondary1>Finance at CUNY-Baruch College</BoldClrSecondary1> (New York City). Worked in consulting for 3 years.</p><br/>
         <p>Self taught programmer, currently <BoldClrSecondary1>freelancing as a web developer.</BoldClrSecondary1></p><br/>
-        <p>Aside from coding, I'm interested in <BoldClrSecondary1>entrepreneurship</BoldClrSecondary1>, opened a mini coffee shop business in 2020.</p>
+        <p>Aside from coding, I'm interested in <BoldClrSecondary1>entrepreneurship</BoldClrSecondary1>. I opened a mini coffee shop business in 2020.</p>
         </StyledBio>
         <StyledList>
         <p>Technical skills:</p>

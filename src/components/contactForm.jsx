@@ -9,9 +9,9 @@ const StyledForm = styled.form`
   margin-top: 2.5%;
 
   input, textarea {
-    color: var(--clr-secondary2);
-    background-color: var(--clr-primary2);
-    border: 1px solid var(--clr-primary1);
+    color: var(--clr-dark-blue);
+    background-color: var(--clr-blue);
+    border: 1px solid var(--clr-secondary1);
     border-radius: var(--border-radius);
     text-align: center;
     font-family: 'Futura', 'Mr Eaves Sans', 'Futura PT Book';
@@ -23,13 +23,13 @@ const StyledForm = styled.form`
   }
   
   ::placeholder {
-      color: var(--clr-secondary1);
+      color: var(--clr-dark-blue);
     }
 }
   button{
-    color: var(--clr-secondary2);
-    background-color: var(--clr-primary1);
-    border: 1px solid var(--clr-secondary2);
+    color: var(--clr-secondary1);
+    background-color: var(--clr-blue);
+    border: 1px solid var(--clr-secondary1);
     width: 15%;
     height: 30px;
     border-radius: var(--border-radius);
@@ -39,8 +39,8 @@ const StyledForm = styled.form`
     transition: 0.3s;
   }
   button:hover {
-    color: var(--clr-secondary2);
-    background: var(--clr-secondary1);
+    color: var(--clr-blue);
+    background: var(--clr-dark-blue);
     border: 1px var(--clr-secondary1) solid;
 }
 

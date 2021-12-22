@@ -4,7 +4,7 @@ import { useSpring, animated } from 'react-spring';
 import { FaAngleDown } from 'react-icons/fa';
 
 const Wrapper = styled.section`
-  background: linear-gradient(to bottom, #082032, #0e2b43, #153654, #1e4266, #284e78);
+  background-image: linear-gradient(to bottom, #a1cae2, #b6d1e8, #c8d8ec, #d9e0ef, #e7e9f2, #ededf3, #f2f1f5, #f6f6f6, #f6f6f6, #f6f6f6, #f6f6f6, #f6f6f6);
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -16,7 +16,7 @@ const Wrapper = styled.section`
     animation: bounce 2s infinite;
     position: absolute;
     bottom: 2%;
-    color: var(--clr-secondary1);
+    color: var(--clr-dark-blue);
   }
   @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {

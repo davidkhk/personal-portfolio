@@ -11,7 +11,7 @@ bottom: 10%;
 left: 2%;
 
 a {
-    color: var(--clr-secondary2);
+    color: var(--clr-dark-blue);
     font-size: 1.5rem;
     transition: 0.3s;
     padding-block: 20%;

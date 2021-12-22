@@ -2,11 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
-  background-color: var(--clr-primary1);
   border-radius: var(--border-radius);
   margin: 2% 10%;
   display: flex;
   flex-direction: row;
+  box-shadow: 3px 3px 10px var(--clr-dark-blue);
 
   img {
     margin: 2%;
@@ -35,7 +35,7 @@ const StyledDiv = styled.div`
   }
   li {
     display: inline-block;
-    border: 1px var(--clr-secondary2) solid;
+    border: 1px var(--clr-secondary1) solid;
     border-radius: var(--border-radius);
     text-align: center;
     margin: 3px 3px 3px 0;
@@ -48,16 +48,15 @@ const StyledDiv = styled.div`
 `
 const StyledLinks = styled.a`
   text-decoration: none;
-  color: var(--clr-secondary2);
+  color: var(--clr-dark-blue);
   border: 1px var(--clr-secondary1) solid;
-  background: var(--clr-primary1);
   margin-right: 10px;
   padding: 5px;
   border-radius: var(--border-radius);
   transition: all .2s ease-in;
 
   :hover {
-    background-color: var(--clr-secondary2);
+    background-color: var(--clr-dark-blue);
     color: var(--clr-secondary1);
     border: 1px var(--clr-secondary1) solid;
 }

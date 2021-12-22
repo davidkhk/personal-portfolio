@@ -5,18 +5,18 @@ import { FaRegCopyright } from 'react-icons/fa';
 const StyledFooter = styled.footer`
   text-align: center;
   justify-content: center;
-  background-color: #082032;
+  background-color: var(--clr-blue);
   border-top: 1px var(--clr-primary2) solid;
   padding-block: 1%;
 
   a {
-    color: var(--clr-secondary2);
+    color: var(--clr-dark-blue);
     text-decoration: none;
-    padding: 2px;
+    padding: 3px;
     transition: all 0.3s ease-in;
   }
   a:hover {
-    color: var(--clr-secondary2);
+    color: var(--clr-blue);
     background: var(--clr-secondary1);
     border-radius: var(--border-radius);
   }

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styled, { css } from 'styled-components';
 import { useSpring, animated } from 'react-spring';
 import { FaRegFilePdf, FaBars, FaAngleDoubleDown } from 'react-icons/fa';
-import ResumeFile from '../images/resume.pdf';
+import ResumeFile from '../assets/resume.pdf';
 
 const AnimatedNav = styled(animated.nav)`
   position: fixed;
@@ -11,7 +11,7 @@ const AnimatedNav = styled(animated.nav)`
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  background-color: var(--clr-primary1);
+  background-color: var(--clr-blue);
 
   @media (max-width: 600px) {
     #resume {
@@ -60,19 +60,19 @@ const MenuLinks = styled.a`
   padding: .3rem;
   cursor: pointer;
   text-decoration: none;
-  color: var(--clr-secondary2);
+  color: var(--clr-dark-blue);
   transition: all .2s ease-in;
  
   &:hover {
-    color: var(--clr-secondary1);
-    background: var(--clr-secondary2);
+    color: var(--clr-blue);
+    background: var(--clr-secondary1);
     border-radius: var(--border-radius);
 }
 
   ${props =>
     props.resume &&
     css`
-      border: 1px solid var(--clr-secondary2);
+      border: 1px solid var(--clr-dark-blue);
       border-radius: var(--border-radius);
     `}
 `;
