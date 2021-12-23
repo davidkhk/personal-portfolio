@@ -27,7 +27,7 @@ const StyledForm = styled.form`
     }
 }
   button{
-    color: var(--clr-secondary1);
+    color: var(--clr-dark-blue);
     background-color: var(--clr-blue);
     border: 1px solid var(--clr-secondary1);
     width: 15%;
@@ -41,7 +41,7 @@ const StyledForm = styled.form`
   button:hover {
     color: var(--clr-blue);
     background: var(--clr-dark-blue);
-    border: 1px var(--clr-secondary1) solid;
+    border: 1px var(--clr-blue) solid;
 }
 
 @media (max-width: 600px) {
