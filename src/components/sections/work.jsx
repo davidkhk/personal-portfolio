@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Fade from 'react-reveal/Fade';
 import Project from '../project';
 import projectsData from '../projectsData';
 
@@ -31,7 +32,9 @@ function Work(){
     return(
         <Wrapper id='work'>
             <h1>Work</h1>
-            {projectsData.map(createProject)}
+            <Fade left>
+              {projectsData.map(createProject)}
+            </Fade>
         </Wrapper>
     )
 }

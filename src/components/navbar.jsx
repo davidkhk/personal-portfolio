@@ -12,6 +12,7 @@ const AnimatedNav = styled(animated.nav)`
   align-items: center;
   flex-wrap: wrap;
   background-color: var(--clr-blue);
+  z-index: 100;
 
   @media (max-width: 600px) {
     #resume {
@@ -19,7 +20,7 @@ const AnimatedNav = styled(animated.nav)`
     right: 12%;
     top: 8px;
   }
-  }
+}
 `;
 
 const Logo = styled.h1`

@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import Fade from 'react-reveal/Fade';
+import Slide from 'react-reveal/Slide';
 import { FaHtml5, FaCss3Alt, FaJsSquare, FaNodeJs, FaReact, FaWordpress, FaCaretRight } from 'react-icons/fa';
 
 const Wrapper = styled.section`
@@ -11,10 +13,10 @@ const Wrapper = styled.section`
 `
 
 const Container1 = styled.div`
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin: 3% 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 3% 5%;
 
     @media (max-width: 500px) {
       flex-direction: column;
@@ -41,7 +43,7 @@ const Container1 = styled.div`
     line-height: 1.5rem;
   `
 
-  const StyledList = styled.div`
+  const StyledList = styled.div`    
     p {
       margin-top: 0;
     }
@@ -53,7 +55,6 @@ const Container1 = styled.div`
       flex-direction: row;
       list-style-type: none;
       padding: 5px 0;
-      margin: 0;
     }
 
     @media (max-width: 500px) {
@@ -95,24 +96,29 @@ return (
       <h1>About me</h1>
       <Container1>
         <StyledBio>
-        <p>Born and raised in <BoldClrSecondary1>São Paulo, Brazil</BoldClrSecondary1>. Earned a BBA degree in <BoldClrSecondary1>Finance at CUNY-Baruch College</BoldClrSecondary1> (New York City). Worked in consulting for 3 years.</p><br/>
-        <p>Self taught programmer, currently <BoldClrSecondary1>freelancing as a web developer.</BoldClrSecondary1></p><br/>
+        <Fade left>
+        <p>Born and raised in <BoldClrSecondary1>São Paulo, Brazil</BoldClrSecondary1>. Studied <BoldClrSecondary1>Finance at CUNY-Baruch College</BoldClrSecondary1> (New York City). Worked in consulting for 3 years.</p><br/>
+        <p>Self taught programmer, currently <BoldClrSecondary1>freelancing as a software developer.</BoldClrSecondary1></p><br/>
         <p>Aside from coding, I'm interested in <BoldClrSecondary1>entrepreneurship</BoldClrSecondary1>. I opened a mini coffee shop business in 2020.</p>
+        </Fade>
         </StyledBio>
         <StyledList>
-        <p>Technical skills:</p>
-        <ul>
-          <li><ClrSecondary1><FaHtml5 /></ClrSecondary1>&nbsp;HTML</li>
-          <li><ClrSecondary1><FaCss3Alt /></ClrSecondary1>&nbsp;CSS</li>
-          <li><ClrSecondary1><FaJsSquare /></ClrSecondary1>&nbsp;Javascript</li>
-          <li><ClrSecondary1><FaNodeJs /></ClrSecondary1>&nbsp;Node.js</li>
-          <li><ClrSecondary1><FaReact /></ClrSecondary1>&nbsp;React</li>
-          <li><ClrSecondary1><FaWordpress /></ClrSecondary1>&nbsp;Wordpress</li>
-        </ul>
+        <Fade right>
+          <p>Technical skills:</p>
+          <ul>
+            <li><ClrSecondary1><FaHtml5 /></ClrSecondary1>&nbsp;HTML</li>
+            <li><ClrSecondary1><FaCss3Alt /></ClrSecondary1>&nbsp;CSS</li>
+            <li><ClrSecondary1><FaJsSquare /></ClrSecondary1>&nbsp;Javascript</li>
+            <li><ClrSecondary1><FaNodeJs /></ClrSecondary1>&nbsp;Node.js</li>
+            <li><ClrSecondary1><FaReact /></ClrSecondary1>&nbsp;React</li>
+            <li><ClrSecondary1><FaWordpress /></ClrSecondary1>&nbsp;Wordpress</li>
+          </ul>
+        </Fade>
         </StyledList>
       </Container1>
     <p>Soft skills:</p>
       <Container2>
+      <Slide bottom>
       <div>
       <p>As a finance consultant:</p>
       <ul>
@@ -142,6 +148,7 @@ return (
         <li><ClrSecondary1><FaCaretRight/></ClrSecondary1>&nbsp;Efficiency</li>
       </ul>
       </div>
+      </Slide>
       </Container2>
     </Wrapper>
 )

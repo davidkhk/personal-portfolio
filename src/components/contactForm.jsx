@@ -33,7 +33,7 @@ const StyledForm = styled.form`
     width: 15%;
     height: 30px;
     border-radius: var(--border-radius);
-    margin-bottom: 10%;
+    margin: 2% 0 10% 0;
     text-align: center;
     font-family: 'Futura', 'Mr Eaves Sans', 'Futura PT Book';
     transition: 0.3s;
@@ -71,6 +71,7 @@ const ContactForm = () => {
     let result = await response.json();
     alert(result.status);
   };
+
   return (
     <StyledForm onSubmit={handleSubmit}>
       <>
