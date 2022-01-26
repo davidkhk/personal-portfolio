@@ -9,6 +9,7 @@ flex-direction: column;
 position: fixed;
 bottom: 10%;
 left: 2%;
+z-index: 100;
 
 a {
     color: var(--clr-dark-blue);
