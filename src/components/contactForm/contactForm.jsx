@@ -20,6 +20,10 @@ const StyledButton = styled.button`
     background: var(--clr-dark-blue);
     border: 1px var(--clr-blue) solid;
   }
+  
+  @media (max-width: 600px) {
+    width: 30%;
+  }
 `
 
 const ContactForm = () => {
