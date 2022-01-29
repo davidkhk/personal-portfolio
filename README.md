@@ -4,4 +4,4 @@
 My personal portfolio website showcasing my projects.\
 Designed and built from scratch using javascript, based on create-react-app.
 
-Visit at https:davidkang.me
+[davidkang.me](https://www.davidkang.me)
