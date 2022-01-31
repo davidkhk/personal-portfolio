@@ -9,7 +9,7 @@ const StyledButton = styled.button`
   width: 15%;
   height: 30px;
   border-radius: var(--border-radius);
-  margin: 2% 0 10% 0;
+  margin: 2% 0 2% 0;
   text-align: center;
   cursor: pointer;
   font-family: 'Futura', 'Mr Eaves Sans', 'Futura PT Book';

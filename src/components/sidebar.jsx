@@ -7,7 +7,7 @@ const IconsContainer = styled(animated.div)`
 display: flex;
 flex-direction: column;
 position: fixed;
-bottom: 10%;
+bottom: 15%;
 left: 2%;
 z-index: 100;
 
