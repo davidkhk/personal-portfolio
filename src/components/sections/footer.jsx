@@ -3,8 +3,9 @@ import styled, { css } from 'styled-components';
 import { FaRegCopyright } from 'react-icons/fa';
 
 const StyledFooter = styled.footer`
-  text-align: center;
-  justify-content: center;
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 2%;
   background-color: var(--clr-blue);
   border-top: 1px var(--clr-primary2) solid;
   padding-block: 1%;
@@ -36,11 +37,15 @@ const StyledP = styled.p`
 
 function Footer(){
   const year = new Date().getFullYear();
-    return (
-      <StyledFooter>
+    
+  return (
+    <StyledFooter>
+      <div>
         <StyledP><a href='https://github.com/davidkhk/personal-portfolio' target='_blank' rel='noreferrer'>Designed & built by David Kang</a></StyledP>
         <StyledP year><FaRegCopyright /> {year}</StyledP>
-      </StyledFooter>
-    )}
+      </div>
+      <StyledP><a href="mailto:hello@davidkang.me">hello@davidkang.me</a></StyledP>
+    </StyledFooter>
+  )}
 
 export default Footer;
