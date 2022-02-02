@@ -2,6 +2,7 @@ import React from 'react';
 import { FaGitAlt, FaGlobe } from 'react-icons/fa';
 import frapp from '../assets/frapp-thumbnail.gif';
 import travelAdvisor from '../assets/travel-advisor.gif';
+import cryptoDapp from '../assets/crypto-dapp.gif';
 import personalPortfolio from '../assets/personal-portfolio.gif';
 
 const projectsData = [
@@ -30,7 +31,19 @@ const projectsData = [
         sourceCodeLink: 'https://github.com/davidkhk/travel-app'
     },
     {
-        key: 2,
+        key: 3,
+        title: 'Crypto App',
+        subtitle: 'Connect your MetaMask wallet and start sending crypto.',
+        techStack: <ul><li>HTML</li><li>CSS</li><li>JAVASCRIPT</li><li>REACT</li><li>SOLIDITY</li></ul>,
+        description: <p>A full fledged web 3.0 application built in React that allows users to send transactions through the blockchain. Pair your MetaMask ethereum wallet and start sending crypto! Each real transaction is paired with a gif and you can check its details on etherscan. Here I also learned how to write smart contracts in the Solidity programming language.<br/><br/>Other tools/libraries used: Tailwind CSS</p>,
+        image: `${cryptoDapp}`,
+        seeLive: <span><FaGlobe/> Live</span>,
+        sourceCode: <span><FaGitAlt/> Code</span>,
+        seeLiveLink: 'https://dk-crypto-dapp.netlify.app/',
+        sourceCodeLink: 'https://github.com/davidkhk/dk-crypto-dapp'
+    },
+    {
+        key: 4,
         title: 'Personal portfolio',
         subtitle: 'My personal portfolio showcasing my projects',
         techStack: <ul><li>HTML</li><li>CSS</li><li>JAVASCRIPT</li><li>REACT</li><li>NODE.JS</li></ul>,
