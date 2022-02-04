@@ -33,6 +33,10 @@ const StyledP = styled.p`
     css`
       font-size 0.7em;
     `};
+
+    @media (max-width: 425px) {
+      font-size: .7rem;
+    }
 `
 
 function Footer(){
