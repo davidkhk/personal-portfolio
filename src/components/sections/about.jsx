@@ -85,8 +85,8 @@ function About(){
         <Container1>
           <StyledBio>
             <Fade left>
-            <p>Born and raised in <BoldClrSecondary1>São Paulo, Brazil</BoldClrSecondary1>. Studied <BoldClrSecondary1>Finance at CUNY-Baruch College</BoldClrSecondary1> (New York City). Worked in consulting for 3 years.</p><br/>
-            <p>Self taught programmer, currently <BoldClrSecondary1>freelancing as a software developer.</BoldClrSecondary1></p><br/>
+            <p>Born and raised in <BoldClrSecondary1>São Paulo, Brazil</BoldClrSecondary1>. Studied <BoldClrSecondary1>Finance and Investments at CUNY-Baruch College</BoldClrSecondary1> (New York City). Worked in consulting for 6 years.</p><br/>
+            <p>I'm a self taught programmer, currently <BoldClrSecondary1>freelancing as a software developer.</BoldClrSecondary1></p><br/>
             <p>Aside from coding, I'm interested in <BoldClrSecondary1>entrepreneurship</BoldClrSecondary1>. I opened a mini coffee shop business in 2020.</p>
             </Fade>
           </StyledBio>
@@ -98,7 +98,7 @@ function About(){
               <li><ClrSecondary1><FaCss3Alt /></ClrSecondary1>&nbsp;CSS</li>
               <li><ClrSecondary1><FaJsSquare /></ClrSecondary1>&nbsp;Javascript</li>
               <li><ClrSecondary1><FaNodeJs /></ClrSecondary1>&nbsp;Node.js</li>
-              <li><ClrSecondary1><FaReact /></ClrSecondary1>&nbsp;React</li>
+              <li><ClrSecondary1><FaReact /></ClrSecondary1>&nbsp;React.js</li>
               <li><ClrSecondary1><FaWordpress /></ClrSecondary1>&nbsp;Wordpress</li>
             </ul>
             </Fade>
@@ -121,7 +121,6 @@ function About(){
             <ul>      
               <li><ClrSecondary1><FaCaretRight/></ClrSecondary1>&nbsp;Ability to learn</li>
               <li><ClrSecondary1><FaCaretRight/></ClrSecondary1>&nbsp;Developed curiousity</li>
-              <li><ClrSecondary1><FaCaretRight/></ClrSecondary1>&nbsp;Humility</li>
               <li><ClrSecondary1><FaCaretRight/></ClrSecondary1>&nbsp;Dedication</li>
               <li><ClrSecondary1><FaCaretRight/></ClrSecondary1>&nbsp;Discipline</li>
             </ul>
@@ -129,7 +128,6 @@ function About(){
           <div>
             <p>As an entrepreneur:</p>
             <ul>
-              <li><ClrSecondary1><FaCaretRight/></ClrSecondary1>&nbsp;Problem solving skills</li>
               <li><ClrSecondary1><FaCaretRight/></ClrSecondary1>&nbsp;Strategic thinking</li>
               <li><ClrSecondary1><FaCaretRight/></ClrSecondary1>&nbsp;Resilience</li>
               <li><ClrSecondary1><FaCaretRight/></ClrSecondary1>&nbsp;Resourcefulness</li>
