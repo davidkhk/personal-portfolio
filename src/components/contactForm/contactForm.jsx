@@ -32,7 +32,7 @@ const ContactForm = () => {
       <input className="input" type="hidden" name="form-name" value="contact" />
       <>
         <label htmlFor='name'></label>
-        <input className="input" type='text' id='name' name='name' placeholder="What's yout name?" required />
+        <input className="input" type='text' id='name' name='name' placeholder="What's your name?" required />
       </>
       <>
         <label htmlFor='email'></label>
