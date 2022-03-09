@@ -35,7 +35,7 @@ const projectsData = [
         title: 'Crypto App',
         subtitle: 'Connect your MetaMask wallet and start sending crypto',
         techStack: <ul><li>HTML</li><li>CSS</li><li>JAVASCRIPT</li><li>REACT</li><li>SOLIDITY</li></ul>,
-        description: <p>A full fledged web 3.0 application built in React.js that allows users to send transactions through the blockchain. Pair your MetaMask ethereum wallet and start sending crypto! Each real transaction is paired with a gif and you can check its details on etherscan. Here I also learned how to write smart contracts in the Solidity programming language.<br/><br/>Other tools/libraries used: Tailwind CSS.</p>,
+        description: <p>A full fledged web 3.0 application built in React.js that allows users to send transactions through the blockchain. Pair your MetaMask ethereum wallet and start sending crypto! Each real transaction is paired with a gif and you can check its details on etherscan. Here I also familiarized with the Solidity programming language.<br/><br/>Other tools/libraries used: Tailwind CSS, React Context.</p>,
         image: `${cryptoDapp}`,
         seeLive: <span><FaGlobe/> Live</span>,
         sourceCode: <span><FaGitAlt/> Code</span>,
