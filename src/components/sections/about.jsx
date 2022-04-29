@@ -31,8 +31,25 @@ const Container1 = styled.div`
       width: 100%;
       margin-bottom: 10%;
     }
+
     p {
       margin-block: 0;
+    }
+
+    a {
+      text-decoration: none;
+      padding: 2px;
+    
+      :visited {
+        color: var(--clr-secondary2)
+    }
+
+      :hover {
+        padding: 2px;
+        color: white;
+        background-color: black;
+        transition: .3s;
+      }
     }
   `
   const BoldClrSecondary1 = styled.span`
@@ -54,6 +71,7 @@ const Container1 = styled.div`
       padding: 5px 0;
     }
   `
+
   const Container2 = styled.div`
     display: flex;
     flex-direction: row;
@@ -85,8 +103,8 @@ function About(){
         <Container1>
           <StyledBio>
             <Fade left>
-            <p>Born and raised in <BoldClrSecondary1>São Paulo, Brazil</BoldClrSecondary1>. Studied <BoldClrSecondary1>Finance at CUNY-Baruch College</BoldClrSecondary1> (New York City). Worked in consulting for 3 years.</p><br/>
-            <p>Self taught programmer, currently <BoldClrSecondary1>freelancing as a software developer.</BoldClrSecondary1></p><br/>
+            <p>Born and raised in <BoldClrSecondary1>São Paulo, Brazil</BoldClrSecondary1>. Studied <BoldClrSecondary1>Finance at CUNY-Baruch College</BoldClrSecondary1> (New York City). Worked in consulting for 6 years.</p><br/>
+            <p>Self taught programmer, I'm currently working as a <BoldClrSecondary1>frontend web developer</BoldClrSecondary1> at <a href='https://d3.do' target='_blank' rel='noreferrer'>D3_Company</a>.</p><br/>
             <p>Aside from coding, I'm interested in <BoldClrSecondary1>entrepreneurship</BoldClrSecondary1>. I opened a mini coffee shop business in 2020.</p>
             </Fade>
           </StyledBio>

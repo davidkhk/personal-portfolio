@@ -35,7 +35,6 @@ const GlobalStyle = createGlobalStyle`
   font-family: 'FuturaOblique';
   src: url(${FuturaOblique}) format('woff');
 }
-
   html {
     scroll-behavior: smooth;
 }
