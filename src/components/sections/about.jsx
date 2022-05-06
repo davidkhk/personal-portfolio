@@ -37,6 +37,7 @@ const Container1 = styled.div`
     }
 
     a {
+      color: var(--clr-secondary2);
       text-decoration: none;
       padding: 2px;
     
