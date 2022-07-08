@@ -121,3 +121,36 @@ export const projectsData = [
     sourceCodeLink: 'https://github.com/davidkhk/personal-portfolio',
   },
 ];
+
+export const AboutData = {
+  mainText: {
+    paragraph1: (
+      <p>
+        'Born and raised in <span>São Paulo, Brazil</span>. Studied Finance at
+        CUNY-Baruch College (New York City). Worked in consulting for 6 years.'
+      </p>
+    ),
+    paragraph2: (
+      <p>
+        Self taught programmer, I'm currently working as a{' '}
+        <span>frontend web developer</span> at{' '}
+        <a href='https://d3.do' target='_blank' rel='noreferrer'>
+          D3_Company
+        </a>
+        .
+      </p>
+    ),
+    paragrap3: (
+      <p>
+        Aside from coding, I'm interested in <span>entrepreneurship</span>. I
+        opened a mini coffee shop business in 2020.
+      </p>
+    ),
+  },
+  technicalSkills: ['HTML', 'CSS', 'Javascript', 'Node.js', 'React.js'],
+  softSkills: {
+    finance: {},
+    developer: {},
+    entrepreneur: {},
+  },
+};

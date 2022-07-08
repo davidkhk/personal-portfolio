@@ -1,19 +1,30 @@
 import React from 'react';
-import { Navbar, Sidebar, Home, About, Work, Contact, Footer } from './components';
+import {
+  Navbar,
+  Sidebar,
+  Home,
+  About,
+  Work,
+  Contact,
+  Footer,
+} from './components';
+import GlobalStyles from './styles/globalStyles';
 
-
-function App() {   
+const App = () => {
   return (
     <>
-      <Navbar />
-      <Sidebar />
-      <Home />
-      <Work />
-      <About />
-      <Contact />
-      <Footer />
+      <>
+        <GlobalStyles />
+        <Navbar />
+        <Sidebar />
+        <Home />
+        <Work />
+        <About />
+        <Contact />
+        <Footer />
+      </>
     </>
   );
-}
+};
 
 export default App;
