@@ -6,7 +6,7 @@ const variables = css`
     --clr-primary2: #11324D;
     --clr-secondary1: #5089C6;
     --clr-dark-blue: #11324D;
-    --clr-blue: #a5cee6;
+    --clr-blue: #abcdeb;
 
     --border-radius: 5px;
   }

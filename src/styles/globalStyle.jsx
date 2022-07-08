@@ -1,8 +1,8 @@
 import { createGlobalStyle } from 'styled-components';
 import variables from './variables';
-import FuturaBold from "../fonts/FuturaLT-Bold.woff";
-import FuturaLT from "../fonts/FuturaLT.woff";
-import FuturaOblique from "../fonts/FuturaLT-BookOblique.woff";
+import FuturaBold from '../assets/fonts/FuturaLT-Bold.woff';
+import FuturaLT from '../assets/fonts/FuturaLT.woff';
+import FuturaOblique from '../assets/fonts/FuturaLT-BookOblique.woff';
 
 const GlobalStyle = createGlobalStyle`
   ${variables};
@@ -47,6 +47,6 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'FuturaBold';
     font-size: 3rem;
 }
-`
+`;
 
 export default GlobalStyle;
