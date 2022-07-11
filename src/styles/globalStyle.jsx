@@ -4,7 +4,7 @@ import FuturaBold from '../assets/fonts/FuturaLT-Bold.woff';
 import FuturaLT from '../assets/fonts/FuturaLT.woff';
 import FuturaOblique from '../assets/fonts/FuturaLT-BookOblique.woff';
 
-const GlobalStyles = createGlobalStyle`
+const GlobalStyle = createGlobalStyle`
   ${variables};
   
   * {
@@ -49,4 +49,4 @@ const GlobalStyles = createGlobalStyle`
 }
 `;
 
-export default GlobalStyles;
+export default GlobalStyle;
