@@ -1,7 +1,6 @@
 import styled, { css } from 'styled-components';
-import { animated } from 'react-spring';
 
-export const AnimatedNav = styled(animated.nav)`
+export const StyledNav = styled.nav`
   position: fixed;
   width: 100%;
   display: flex;

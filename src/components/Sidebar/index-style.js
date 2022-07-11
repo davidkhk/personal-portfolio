@@ -1,7 +1,6 @@
 import styled from 'styled-components';
-import { animated } from 'react-spring';
 
-export const IconsContainer = styled(animated.div)`
+export const IconsContainer = styled.div`
   display: flex;
   flex-direction: column;
   position: fixed;

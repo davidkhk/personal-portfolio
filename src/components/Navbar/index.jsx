@@ -1,12 +1,5 @@
 import React, { useState } from 'react';
-import {
-  AnimatedNav,
-  Logo,
-  Hamburger,
-  Menu,
-  MenuLinks,
-} from './index-style.js';
-import { useSpring } from 'react-spring';
+import { StyledNav, Logo, Hamburger, Menu, MenuLinks } from './index-style.js';
 import { FaRegFilePdf, FaBars, FaAngleDoubleDown } from 'react-icons/fa';
 
 const resumeLink =
@@ -18,16 +11,9 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   }
 
-  const props = useSpring({
-    from: { opacity: 0 },
-    to: { opacity: 1 },
-    delay: 2000,
-    config: { duration: 500 },
-  });
-
   return (
     <>
-      <AnimatedNav style={props}>
+      <StyledNav>
         <Logo>DK.</Logo>
         <Hamburger onClick={handleClick}>
           {isOpen ? <FaAngleDoubleDown /> : <FaBars />}
@@ -47,7 +33,7 @@ const Navbar = () => {
         >
           RESUME <FaRegFilePdf />
         </MenuLinks>
-      </AnimatedNav>
+      </StyledNav>
     </>
   );
 };

@@ -7,7 +7,8 @@ export const StyledForm = styled.form`
   width: 60%;
   margin-top: 2.5%;
 
-  input {
+  input,
+  textarea {
     color: var(--clr-dark-blue);
     background-color: var(--clr-blue);
     border: 1px solid var(--clr-secondary1);
@@ -21,14 +22,17 @@ export const StyledForm = styled.form`
   input:focus {
     outline-width: 0;
   }
-  input::placeholder {
-    color: var(--clr-dark-blue);
-    font-family: 'Futura', 'Mr Eaves Sans', 'Futura PT Book';
-  }
+  input,
+  textarea {
+    ::placeholder {
+      color: var(--clr-dark-blue);
+      font-family: 'Futura', 'Mr Eaves Sans', 'Futura PT Book';
+    }
 
-  @media (max-width: 600px) {
-    .input {
-      width: 100%;
+    @media (max-width: 600px) {
+      .input {
+        width: 100%;
+      }
     }
   }
 `;

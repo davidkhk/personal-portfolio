@@ -24,8 +24,7 @@ export const projectsData = [
         ecommerce part, I used Commercejs' API to handle the back-end, and
         Stripe's API to handle the payment process.
         <br />
-        <br /> Other tools/libraries used: Material UI, Cors, Express, Google
-        APIs, Nodemailer, React-Reveal, Styled-Components.
+        <br /> Other tools/libraries used: Material UI, Styled-Components.
       </p>
     ),
     image: `${frapp}`,
@@ -102,8 +101,7 @@ export const projectsData = [
         clearly showcases my projects, skills and personality.
         <br />
         <br />
-        Other tools/libraries used: Cors, Express, Nodemailer, React-Spring,
-        React-Reveal, Google APIs, Styled-Components.
+        Other tools/libraries used: Styled-Components.
       </p>
     ),
     image: `${personalPortfolio}`,

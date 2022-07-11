@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { animated } from 'react-spring';
 
 export const Wrapper = styled.section`
   background-image: linear-gradient(
@@ -64,24 +63,4 @@ export const StyledDiv = styled.div`
       font-size: 2.8rem;
     }
   }
-`;
-
-export const AnimatedGreetings = styled(animated.h3)`
-  margin-bottom: 10%;
-`;
-
-export const AnimatedName = styled(animated.div)`
-  display: flex;
-  text-shadow: 3px 3px var(--clr-secondary1);
-  font-size: 4rem;
-  text-align: left;
-`;
-
-export const AnimatedDot = styled(animated.h1)``;
-
-export const AnimatedTitle = styled(animated.p)`
-  font-family: 'FuturaOblique';
-  margin-top: -1.5rem;
-  font-style: italic;
-  text-align: left;
 `;
