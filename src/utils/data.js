@@ -1,5 +1,13 @@
 import React from 'react';
-import { FaGitAlt, FaGlobe } from 'react-icons/fa';
+import {
+  FaGitAlt,
+  FaGlobe,
+  FaHtml5,
+  FaCss3Alt,
+  FaJsSquare,
+  FaNodeJs,
+  FaReact,
+} from 'react-icons/fa';
 import frapp from '../assets/frapp-thumbnail.gif';
 import cryptoDapp from '../assets/crypto-dapp.gif';
 import personalPortfolio from '../assets/personal-portfolio.gif';
@@ -124,7 +132,7 @@ export const AboutData = {
   mainText: {
     paragraph1: (
       <p>
-        'Born and raised in <span>São Paulo, Brazil</span>. Studied Finance at
+        Born and raised in <span>São Paulo, Brazil</span>. Studied Finance at
         CUNY-Baruch College (New York City). Worked in consulting for 6 years.'
       </p>
     ),
@@ -138,17 +146,19 @@ export const AboutData = {
         .
       </p>
     ),
-    paragrap3: (
+    paragraph3: (
       <p>
         Aside from coding, I'm interested in <span>entrepreneurship</span>. I
         opened a mini coffee shop business in 2020.
       </p>
     ),
   },
-  technicalSkills: ['HTML', 'CSS', 'Javascript', 'Node.js', 'React.js'],
-  softSkills: {
-    finance: {},
-    developer: {},
-    entrepreneur: {},
-  },
+  technicalSkills: [
+    { skill: 'HTML', icon: <FaHtml5 /> },
+    { skill: 'CSS', icon: <FaCss3Alt /> },
+    { skill: 'Javascript', icon: <FaJsSquare /> },
+    { skill: 'Node.js', icon: <FaNodeJs /> },
+    { skill: 'React.js', icon: <FaReact /> },
+  ],
+  softSkills: [{ finance: '' }, { developer: '' }, { entrepreneur: '' }],
 };
