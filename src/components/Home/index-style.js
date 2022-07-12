@@ -49,7 +49,6 @@ export const Wrapper = styled.section`
 export const StyledDiv = styled.div`
   display: flex;
   flex-direction: column;
-  width: 35%;
   height: auto;
 
   @media (max-width: 600px) {

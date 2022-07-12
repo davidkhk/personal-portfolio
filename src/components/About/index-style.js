@@ -4,6 +4,7 @@ export const Wrapper = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 4%;
   background-image: linear-gradient(
     to bottom,
     #a1cae2,
@@ -19,8 +20,22 @@ export const Wrapper = styled.section`
     #f6f6f6,
     #f6f6f6
   );
-  padding-top: 4%;
+
+  span {
+    color: var(--clr-secondary1);
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 2px 0;
+  }
 `;
+
 export const Container1 = styled.div`
   display: flex;
   flex-direction: row;
@@ -62,26 +77,6 @@ export const StyledBio = styled.div`
       transition: 0.3s;
     }
   }
-  span {
-    color: var(--clr-secondary1);
-    font-weight: 600;
-    line-height: 1.5rem;
-  }
-`;
-
-export const StyledList = styled.div`
-  p {
-    margin-top: 0;
-  }
-  ul {
-    padding: 0;
-  }
-  li {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    padding: 5px 0;
-  }
 `;
 
 export const Container2 = styled.div`
@@ -90,20 +85,7 @@ export const Container2 = styled.div`
   justify-content: space-between;
   width: 70%;
 
-  ul {
-    margin: 0;
-    padding: 0;
-  }
-  li {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-  }
-
   @media (max-width: 800px) {
     flex-wrap: wrap;
   }
-`;
-export const ClrSecondary1 = styled.span`
-  color: var(--clr-secondary1);
 `;
