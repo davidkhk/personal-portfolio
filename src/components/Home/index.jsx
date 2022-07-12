@@ -3,7 +3,7 @@ import { Wrapper, StyledDiv } from './index-style';
 import { FaAngleDown } from 'react-icons/fa';
 import { SectionAnimation } from '../Animation';
 
-const Home = ({ ...props }) => {
+const Home = () => {
   return (
     <Wrapper id='home'>
       <SectionAnimation timeout={2000}>
