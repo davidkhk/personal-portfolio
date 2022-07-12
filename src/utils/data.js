@@ -160,5 +160,33 @@ export const AboutData = {
     { skill: 'Node.js', icon: <FaNodeJs /> },
     { skill: 'React.js', icon: <FaReact /> },
   ],
-  softSkills: [{ finance: '' }, { developer: '' }, { entrepreneur: '' }],
+  softSkills: [
+    {
+      title: 'As a finance consultant:',
+      skills: [
+        'Critical thinking',
+        'Teamwork',
+        'Communication',
+        'Project/time management',
+      ],
+    },
+    {
+      title: 'As a self taught developer:',
+      skills: [
+        'Ability to learn',
+        'Developed curiosity',
+        'Dedication',
+        'Discipline',
+      ],
+    },
+    {
+      title: 'As an entrepreneur:',
+      skills: [
+        'Strategic thinking',
+        'Resiliance',
+        'Resourcefulness',
+        'Efficiency',
+      ],
+    },
+  ],
 };
