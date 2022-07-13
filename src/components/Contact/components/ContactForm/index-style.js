@@ -18,21 +18,15 @@ export const StyledForm = styled.form`
     padding-block: 1%;
     width: 60%;
     margin: 0.5% 0;
-  }
-  input:focus {
-    outline-width: 0;
-  }
-  input,
-  textarea {
     ::placeholder {
       color: var(--clr-dark-blue);
       font-family: 'Futura', 'Mr Eaves Sans', 'Futura PT Book';
     }
-
-    @media (max-width: 600px) {
-      .input {
-        width: 100%;
-      }
+    :focus {
+      outline-width: 0;
+    }
+    @media (max-width: 750px) {
+      width: 100%;
     }
   }
 `;
