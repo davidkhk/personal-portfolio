@@ -13,10 +13,9 @@ export function SectionAnimation({ ...props }) {
   return (
     <motion.div
       initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
+      whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
       transition={{ duration: props.timeout / 1000 }}
-      style={{ width: props.w || 'auto' }}
     >
       {props.children}
     </motion.div>
