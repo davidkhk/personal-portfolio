@@ -1,9 +1,14 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.section`
+  /* border: 1px red solid; */
+
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-block: 4%;
+  width: 100%;
   background-image: linear-gradient(
     to bottom,
     #f6f6f6,
@@ -19,6 +24,4 @@ export const Wrapper = styled.section`
     #b6d1e8,
     #a1cae2
   );
-  padding-block: 4%;
-  width: 100%;
 `;

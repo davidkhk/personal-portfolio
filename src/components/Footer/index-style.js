@@ -29,7 +29,7 @@ export const StyledP = styled.p`
   ${(props) =>
     props.year &&
     css`
-      font-size: 0.7em;
+      font-size: 0.7rem;
     `};
 
   @media (max-width: 425px) {
