@@ -42,11 +42,16 @@ export const Container1 = styled.div`
   justify-content: space-evenly;
   margin: 3% 5%;
 
+  p {
+    margin-top: 0;
+  }
+
   @media (max-width: 500px) {
     flex-wrap: wrap;
     margin: 10% 10% 0 10%;
   }
 `;
+
 export const StyledBio = styled.div`
   display: flex;
   flex-direction: column;
@@ -55,10 +60,6 @@ export const StyledBio = styled.div`
   @media (max-width: 500px) {
     width: 100%;
     margin-bottom: 10%;
-  }
-
-  p {
-    margin-block: 0;
   }
 
   a {
@@ -83,7 +84,7 @@ export const Container2 = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 70%;
+  width: 50%;
 
   @media (max-width: 800px) {
     flex-wrap: wrap;

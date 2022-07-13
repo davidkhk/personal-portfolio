@@ -133,7 +133,7 @@ export const AboutData = {
     paragraph1: (
       <p>
         Born and raised in <span>São Paulo, Brazil</span>. Studied Finance at
-        CUNY-Baruch College (New York City). Worked in consulting for 6 years.'
+        CUNY-Baruch College (New York City). Worked in consulting for 6 years.
       </p>
     ),
     paragraph2: (
