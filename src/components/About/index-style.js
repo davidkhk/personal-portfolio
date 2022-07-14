@@ -55,7 +55,7 @@ export const Container1 = styled.div`
 export const StyledBio = styled.div`
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 50%;
 
   @media (max-width: 500px) {
     width: 100%;

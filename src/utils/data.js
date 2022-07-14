@@ -7,6 +7,8 @@ import {
   FaJsSquare,
   FaNodeJs,
   FaReact,
+  FaGithubSquare,
+  FaGithub,
 } from 'react-icons/fa';
 import frapp from '../assets/frapp-thumbnail.gif';
 import cryptoDapp from '../assets/crypto-dapp.gif';
@@ -43,7 +45,7 @@ export const projectsData = [
     ),
     sourceCode: (
       <span>
-        <FaGitAlt /> Code
+        <FaGithub /> Code
       </span>
     ),
     seeLiveLink: 'https://frappand.co',
@@ -82,7 +84,7 @@ export const projectsData = [
     ),
     sourceCode: (
       <span>
-        <FaGitAlt /> Code
+        <FaGithub /> Code
       </span>
     ),
     seeLiveLink: 'https://dk-crypto-dapp.netlify.app/',
@@ -120,7 +122,7 @@ export const projectsData = [
     ),
     sourceCode: (
       <span>
-        <FaGitAlt /> Code
+        <FaGithub /> Code
       </span>
     ),
     seeLiveLink: 'https://www.davidkang.me',
@@ -159,6 +161,7 @@ export const AboutData = {
     { skill: 'Javascript', icon: <FaJsSquare /> },
     { skill: 'Node.js', icon: <FaNodeJs /> },
     { skill: 'React.js', icon: <FaReact /> },
+    { skill: 'Git', icon: <FaGitAlt /> },
   ],
   softSkills: [
     {
