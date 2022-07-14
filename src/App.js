@@ -1,8 +1,15 @@
 import React from 'react';
-import { Navbar, Sidebar, Home, About, Work, Contact, Footer } from './components';
+import {
+  Navbar,
+  Sidebar,
+  Home,
+  About,
+  Work,
+  Contact,
+  Footer,
+} from './components';
 
-
-function App() {   
+const App = () => {
   return (
     <>
       <Navbar />
@@ -14,6 +21,6 @@ function App() {
       <Footer />
     </>
   );
-}
+};
 
 export default App;

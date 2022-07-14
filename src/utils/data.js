@@ -1,5 +1,15 @@
 import React from 'react';
-import { FaGitAlt, FaGlobe } from 'react-icons/fa';
+import {
+  FaGitAlt,
+  FaGlobe,
+  FaHtml5,
+  FaCss3Alt,
+  FaJsSquare,
+  FaNodeJs,
+  FaReact,
+  FaGithubSquare,
+  FaGithub,
+} from 'react-icons/fa';
 import frapp from '../assets/frapp-thumbnail.gif';
 import cryptoDapp from '../assets/crypto-dapp.gif';
 import personalPortfolio from '../assets/personal-portfolio.gif';
@@ -24,8 +34,7 @@ export const projectsData = [
         ecommerce part, I used Commercejs' API to handle the back-end, and
         Stripe's API to handle the payment process.
         <br />
-        <br /> Other tools/libraries used: Material UI, Cors, Express, Google
-        APIs, Nodemailer, React-Reveal, Styled-Components.
+        <br /> Other tools/libraries used: Material UI, Styled-Components.
       </p>
     ),
     image: `${frapp}`,
@@ -36,7 +45,7 @@ export const projectsData = [
     ),
     sourceCode: (
       <span>
-        <FaGitAlt /> Code
+        <FaGithub /> Code
       </span>
     ),
     seeLiveLink: 'https://frappand.co',
@@ -75,7 +84,7 @@ export const projectsData = [
     ),
     sourceCode: (
       <span>
-        <FaGitAlt /> Code
+        <FaGithub /> Code
       </span>
     ),
     seeLiveLink: 'https://dk-crypto-dapp.netlify.app/',
@@ -102,8 +111,7 @@ export const projectsData = [
         clearly showcases my projects, skills and personality.
         <br />
         <br />
-        Other tools/libraries used: Cors, Express, Nodemailer, React-Spring,
-        React-Reveal, Google APIs, Styled-Components.
+        Other tools/libraries used: Styled-Components.
       </p>
     ),
     image: `${personalPortfolio}`,
@@ -114,10 +122,74 @@ export const projectsData = [
     ),
     sourceCode: (
       <span>
-        <FaGitAlt /> Code
+        <FaGithub /> Code
       </span>
     ),
     seeLiveLink: 'https://www.davidkang.me',
     sourceCodeLink: 'https://github.com/davidkhk/personal-portfolio',
   },
 ];
+
+export const AboutData = {
+  mainText: {
+    paragraph1: (
+      <p>
+        Born and raised in <span>São Paulo, Brazil</span>. Studied Finance at
+        CUNY-Baruch College (New York City). Worked in consulting for 6 years.
+      </p>
+    ),
+    paragraph2: (
+      <p>
+        Self taught programmer, I'm currently working as a{' '}
+        <span>frontend web developer</span> at{' '}
+        <a href='https://d3.do' target='_blank' rel='noreferrer'>
+          D3_Company
+        </a>
+        .
+      </p>
+    ),
+    paragraph3: (
+      <p>
+        Aside from coding, I'm interested in <span>entrepreneurship</span>. I
+        opened a mini coffee shop business in 2020.
+      </p>
+    ),
+  },
+  technicalSkills: [
+    { skill: 'HTML', icon: <FaHtml5 /> },
+    { skill: 'CSS', icon: <FaCss3Alt /> },
+    { skill: 'Javascript', icon: <FaJsSquare /> },
+    { skill: 'Node.js', icon: <FaNodeJs /> },
+    { skill: 'React.js', icon: <FaReact /> },
+    { skill: 'Git', icon: <FaGitAlt /> },
+  ],
+  softSkills: [
+    {
+      title: 'As a finance consultant:',
+      skills: [
+        'Critical thinking',
+        'Teamwork',
+        'Communication',
+        'Project/time management',
+      ],
+    },
+    {
+      title: 'As a self taught developer:',
+      skills: [
+        'Ability to learn',
+        'Developed curiosity',
+        'Dedication',
+        'Discipline',
+      ],
+    },
+    {
+      title: 'As an entrepreneur:',
+      skills: [
+        'Strategic thinking',
+        'Resiliance',
+        'Resourcefulness',
+        'Efficiency',
+      ],
+    },
+  ],
+};
