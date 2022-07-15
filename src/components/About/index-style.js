@@ -5,7 +5,7 @@ export const Wrapper = styled.section`
   flex-direction: column;
   align-items: center;
   padding-top: 4%;
-  background: linear-gradient(180deg, #858585 0%, #efefef 100%);
+  background: linear-gradient(180deg, #cacaca 0%, #f5efe3 100%);
 
   span {
     color: var(--clr-text2);

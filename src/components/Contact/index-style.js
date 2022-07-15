@@ -6,7 +6,7 @@ export const Wrapper = styled.section`
   align-items: center;
   padding: 4% 0 1.03% 0;
   width: 100%;
-  background: linear-gradient(180deg, #efefef 0%, #858585 100%);
+  background: linear-gradient(180deg, #f5efe3 0%, #cacaca 100%);
 
   p {
     margin: 2px;

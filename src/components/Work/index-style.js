@@ -7,5 +7,5 @@ export const Wrapper = styled.section`
   align-items: center;
   padding-block: 4%;
   width: 100%;
-  background: linear-gradient(180deg, #efefef 0%, #858585 100%);
+  background: linear-gradient(180deg, #f5efe3 0%, #cacaca 100%);
 `;

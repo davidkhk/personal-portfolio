@@ -7,7 +7,6 @@ import {
   FaJsSquare,
   FaNodeJs,
   FaReact,
-  FaGithubSquare,
   FaGithub,
 } from 'react-icons/fa';
 import frapp from '../assets/frapp-thumbnail.gif';

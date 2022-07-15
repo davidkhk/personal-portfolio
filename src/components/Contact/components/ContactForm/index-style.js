@@ -10,8 +10,8 @@ export const StyledForm = styled.form`
   input,
   textarea {
     color: var(--clr-text1);
-    background-color: var(--clr-text2);
-    border: 1px solid var(--clr-fill1);
+    background-color: var(--clr-fill1);
+    border: 1px solid var(--clr-text1);
     border-radius: var(--border-radius);
     text-align: center;
     font-family: 'Futura', 'Mr Eaves Sans', 'Futura PT Book';
@@ -33,8 +33,8 @@ export const StyledForm = styled.form`
 
 export const StyledButton = styled.button`
   color: var(--clr-text1);
-  background-color: var(--clr-text2);
-  border: 1px solid var(--clr-fill1);
+  background-color: var(--clr-fill1);
+  border: 1px solid var(--clr-text1);
   width: 15%;
   height: 30px;
   border-radius: var(--border-radius);
@@ -46,7 +46,6 @@ export const StyledButton = styled.button`
 
   :hover {
     color: var(--clr-text2);
-    background: var(--clr-text1);
     border: 1px var(--clr-text2) solid;
   }
 
