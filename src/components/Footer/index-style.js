@@ -4,19 +4,19 @@ export const StyledFooter = styled.footer`
   display: flex;
   justify-content: space-between;
   padding-inline: 2%;
-  background-color: var(--clr-blue);
-  border-top: 1px var(--clr-primary2) solid;
+  background-color: var(--clr-background1);
+  border-top: 1px var(--clr-text2) solid;
   padding-block: 1%;
 
   a {
-    color: var(--clr-dark-blue);
+    color: var(--clr-text1);
     text-decoration: none;
     padding: 3px;
     transition: all 0.3s ease-in;
   }
   a:hover {
-    color: var(--clr-blue);
-    background: var(--clr-secondary1);
+    color: var(--clr-text2);
+    background: var(--clr-fill1);
     border-radius: var(--border-radius);
   }
 `;

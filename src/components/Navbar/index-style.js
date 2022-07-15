@@ -7,7 +7,8 @@ export const StyledNav = styled.nav`
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  background-color: var(--clr-blue);
+  background: linear-gradient(180deg, #858585 0%, #898989 100%);
+
   z-index: 100;
 
   @media (max-width: 600px) {
@@ -21,7 +22,7 @@ export const StyledNav = styled.nav`
 
 export const Logo = styled.h1`
   margin: 0.5rem;
-  text-shadow: 3px 3px var(--clr-secondary1);
+  text-shadow: 3px 3px var(--clr-text2);
   font-size: 1.5rem;
 `;
 
@@ -57,19 +58,19 @@ export const MenuLinks = styled.a`
   padding: 0.3rem;
   cursor: pointer;
   text-decoration: none;
-  color: var(--clr-dark-blue);
+  color: var(--clr-text1);
   transition: all 0.2s ease-in;
 
   &:hover {
-    color: var(--clr-blue);
-    background: var(--clr-secondary1);
+    color: var(--clr-text2);
+    background: var(--clr-fill1);
     border-radius: var(--border-radius);
   }
 
   ${(props) =>
     props.resume &&
     css`
-      border: 1px solid var(--clr-dark-blue);
+      border: 1px solid var(--clr-text1);
       border-radius: var(--border-radius);
     `}
 `;

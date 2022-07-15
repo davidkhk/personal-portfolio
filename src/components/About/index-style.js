@@ -5,24 +5,10 @@ export const Wrapper = styled.section`
   flex-direction: column;
   align-items: center;
   padding-top: 4%;
-  background-image: linear-gradient(
-    to bottom,
-    #a1cae2,
-    #b6d1e8,
-    #c8d8ec,
-    #d9e0ef,
-    #e7e9f2,
-    #ededf3,
-    #f2f1f5,
-    #f6f6f6,
-    #f6f6f6,
-    #f6f6f6,
-    #f6f6f6,
-    #f6f6f6
-  );
+  background: linear-gradient(180deg, #858585 0%, #efefef 100%);
 
   span {
-    color: var(--clr-secondary1);
+    color: var(--clr-text2);
   }
   ul {
     margin: 0;
@@ -63,12 +49,12 @@ export const StyledBio = styled.div`
   }
 
   a {
-    color: var(--clr-secondary2);
+    color: var(--clr-text2);
     text-decoration: none;
     padding: 2px;
 
     :visited {
-      color: var(--clr-secondary2);
+      color: var(--clr-text1);
     }
 
     :hover {

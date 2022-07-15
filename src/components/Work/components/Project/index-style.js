@@ -5,7 +5,8 @@ export const Wrapper = styled.div`
   margin: 2% 10%;
   display: flex;
   flex-direction: row;
-  box-shadow: 3px 3px 10px var(--clr-dark-blue);
+  box-shadow: 3px 3px 10px var(--clr-text1);
+  background: var(--clr-fill1);
 
   img {
     margin: 2%;
@@ -34,7 +35,7 @@ export const StyledDiv = styled.div`
   }
   li {
     display: inline-block;
-    border: 1px var(--clr-secondary1) solid;
+    border: 1px var(--clr-text2) solid;
     border-radius: var(--border-radius);
     text-align: center;
     margin: 3px 3px 3px 0;
@@ -47,16 +48,16 @@ export const StyledDiv = styled.div`
 `;
 export const StyledLinks = styled.a`
   text-decoration: none;
-  color: var(--clr-dark-blue);
-  border: 1px var(--clr-secondary1) solid;
+  color: var(--clr-text1);
+  border: 1px var(--clr-text2) solid;
   margin-right: 10px;
   padding: 5px;
   border-radius: var(--border-radius);
   transition: all 0.2s ease-in;
 
   :hover {
-    background-color: var(--clr-dark-blue);
-    color: var(--clr-secondary1);
-    border: 1px var(--clr-secondary1) solid;
+    background-color: var(--clr-fill2);
+    color: var(--clr-text1);
+    border: 1px var(--clr-text2) solid;
   }
 `;

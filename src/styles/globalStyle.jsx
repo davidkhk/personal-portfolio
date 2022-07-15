@@ -15,12 +15,13 @@ const GlobalStyle = createGlobalStyle`
    height: 8px;
 }
   *::-webkit-scrollbar-track {
-   background: linear-gradient(to bottom, #a1cae2, #b6d1e8, #c8d8ec, #d9e0ef, #e7e9f2, #ededf3, #f2f1f5, #f6f6f6, #f6f6f6, #f6f6f6, #f6f6f6, #f6f6f6);
+   background: linear-gradient(180deg, #787878 0%, #ededed 100%)
+
 }
   *::-webkit-scrollbar-thumb {
-   background-color: var(--clr-secondary1);
+   background-color: var(--clr-fill1);
    border-radius: var(--border-radius);
-   border: 1px solid var(--clr-secondary2);
+   border: 1px solid var(--clr-text2);
 }
 
 @font-face {
@@ -40,7 +41,7 @@ const GlobalStyle = createGlobalStyle`
 }
   body {
     font-family: 'FuturaLT';
-    color: var(--clr-dark-blue);
+    color: var(--clr-text1);
     margin: 0;
 }
   h1 {

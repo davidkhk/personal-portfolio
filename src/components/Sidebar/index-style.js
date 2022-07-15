@@ -9,13 +9,13 @@ export const IconsContainer = styled.div`
   z-index: 100;
 
   a {
-    color: var(--clr-dark-blue);
+    color: var(--clr-text1);
     font-size: 1.5rem;
     transition: 0.3s;
     padding-block: 20%;
 
     :hover {
-      color: var(--clr-secondary1);
+      color: var(--clr-text2);
     }
   }
 
