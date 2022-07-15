@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { StyledNav, Logo, Hamburger, Menu, MenuLinks } from './index-style.js';
 import { FaRegFilePdf, FaBars, FaAngleDoubleDown } from 'react-icons/fa';
-import { SectionAnimation } from '../Animation/index.jsx';
+import { FadeIn } from '../Animation/index.jsx';
 
 const resumeLink =
   'https://drive.google.com/open?id=1DyO6arjfoSepsffYuxxto7yiJJu3cqKJ&authuser=davidkhk%40gmail.com&usp=drive_fs';
@@ -13,7 +13,7 @@ const Navbar = () => {
   }
 
   return (
-    <SectionAnimation timeout={1000}>
+    <FadeIn timeout={1000}>
       <StyledNav>
         <Logo>DK.</Logo>
         <Hamburger onClick={handleClick}>
@@ -35,7 +35,7 @@ const Navbar = () => {
           RESUME <FaRegFilePdf />
         </MenuLinks>
       </StyledNav>
-    </SectionAnimation>
+    </FadeIn>
   );
 };
 

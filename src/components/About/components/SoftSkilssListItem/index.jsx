@@ -1,10 +1,10 @@
 import React from 'react';
 import { FaCaretRight } from 'react-icons/fa';
-import { SectionAnimation } from '../../../Animation';
+import { FadeIn } from '../../../Animation';
 
 const SoftSkillListItem = (props) => {
   return (
-    <SectionAnimation timeout={1000}>
+    <FadeIn timeout={1000} delay={0.2}>
       <div>
         <p>{props.title}</p>
         <ul>
@@ -34,7 +34,7 @@ const SoftSkillListItem = (props) => {
           </li>
         </ul>
       </div>
-    </SectionAnimation>
+    </FadeIn>
   );
 };
 

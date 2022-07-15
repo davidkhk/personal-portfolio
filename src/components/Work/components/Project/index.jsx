@@ -1,10 +1,10 @@
 import React from 'react';
-import { SectionAnimation } from '../../../Animation';
+import { FadeIn } from '../../../Animation';
 import { Wrapper, StyledDiv, StyledLinks } from './index-style';
 
 const Project = (props) => {
   return (
-    <SectionAnimation timeout={1000}>
+    <FadeIn timeout={1000} delay={0.2}>
       <Wrapper>
         <StyledDiv>
           <h2>{props.title}</h2>
@@ -28,7 +28,7 @@ const Project = (props) => {
         </StyledDiv>
         <img src={props.image} alt='...' />
       </Wrapper>
-    </SectionAnimation>
+    </FadeIn>
   );
 };
 

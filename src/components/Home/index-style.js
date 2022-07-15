@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.section`
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-image: linear-gradient(
     to bottom,
     #a1cae2,
@@ -16,10 +20,6 @@ export const Wrapper = styled.section`
     #f6f6f6,
     #f6f6f6
   );
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
   a {
     -moz-animation: bounce 2s infinite;

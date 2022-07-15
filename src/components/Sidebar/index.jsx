@@ -1,11 +1,11 @@
 import React from 'react';
 import { IconsContainer } from './index-style';
 import { FaGithub, FaLinkedinIn, FaAngellist } from 'react-icons/fa';
-import { SectionAnimation } from '../Animation';
+import { FadeIn } from '../Animation';
 
 const Sidebar = () => {
   return (
-    <SectionAnimation timeout={1000}>
+    <FadeIn timeout={1000}>
       <IconsContainer>
         <a
           href='https://github.com/davidkhk'
@@ -32,7 +32,7 @@ const Sidebar = () => {
           <FaAngellist />
         </a>
       </IconsContainer>
-    </SectionAnimation>
+    </FadeIn>
   );
 };
 

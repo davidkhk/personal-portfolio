@@ -1,20 +1,22 @@
 import React from 'react';
 import { Wrapper, StyledDiv } from './index-style';
 import { FaAngleDown } from 'react-icons/fa';
-import { SectionAnimation } from '../Animation';
+import { FadeIn } from '../Animation';
 
 const Home = () => {
   return (
     <Wrapper id='home'>
-      <SectionAnimation timeout={2000}>
-        <StyledDiv>
-          <h3>Hi there! My name is</h3>
-          <div>
-            <h1>David Kang</h1>
-          </div>
+      <StyledDiv>
+        <FadeIn timeout={1000} delay={1}>
+          <h3>Hi there!</h3>
+        </FadeIn>
+        <FadeIn timeout={1000} delay={2}>
+          <h1>David Kang</h1>
+        </FadeIn>
+        <FadeIn timeout={1000} delay={3}>
           <p>software developer</p>
-        </StyledDiv>
-      </SectionAnimation>
+        </FadeIn>
+      </StyledDiv>
       <a href='#work'>
         <FaAngleDown />
       </a>
