@@ -43,7 +43,6 @@ export const StyledDiv = styled.div`
 
   @media (max-width: 600px) {
     width: 50%;
-    margin-left: 60px;
 
     h3 {
       font-size: 0.8rem;
