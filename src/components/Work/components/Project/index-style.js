@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Wrapper = styled.div`
   border-radius: var(--border-radius);
@@ -49,15 +49,16 @@ export const StyledDiv = styled.div`
 export const StyledLinks = styled.a`
   text-decoration: none;
   color: var(--clr-text1);
-  border: 1px var(--clr-text2) solid;
+  border: 1px var(--clr-text1) solid;
   margin-right: 10px;
   padding: 5px;
   border-radius: var(--border-radius);
   transition: all 0.2s ease-in;
 
   :hover {
-    background-color: var(--clr-fill2);
-    color: var(--clr-text1);
-    border: 1px var(--clr-text2) solid;
+    color: var(--clr-text2);
+    background: var(--clr-fill1);
+    border: 1px solid var(--clr-text2);
+    border-radius: var(--border-radius);
   }
 `;
