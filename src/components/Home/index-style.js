@@ -5,7 +5,11 @@ export const Wrapper = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(180deg, #858585 0%, #efefef 100%);
+  background: linear-gradient(
+    180deg,
+    var(--clr-background1) 0%,
+    var(--clr-background2) 100%
+  );
 
   a {
     -moz-animation: bounce 2s infinite;

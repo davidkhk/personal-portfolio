@@ -15,7 +15,7 @@ const GlobalStyle = createGlobalStyle`
    height: 8px;
 }
   *::-webkit-scrollbar-track {
-   background: linear-gradient(180deg, #787878 0%, #ededed 100%)
+   background: linear-gradient(180deg, var(--clr-background1) 0%, var(--clr-background2) 100%)
 
 }
   *::-webkit-scrollbar-thumb {
