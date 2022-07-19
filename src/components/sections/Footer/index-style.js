@@ -13,11 +13,12 @@ export const StyledFooter = styled.footer`
     text-decoration: none;
     padding: 3px;
     transition: all 0.3s ease-in;
-  }
-  a:hover {
-    color: var(--clr-text2);
-    background: var(--clr-fill1);
-    border-radius: var(--border-radius);
+
+    &:hover {
+      color: var(--clr-text2);
+      background: var(--clr-fill1);
+      border-radius: var(--border-radius);
+    }
   }
 `;
 

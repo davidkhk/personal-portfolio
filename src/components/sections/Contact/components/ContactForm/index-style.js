@@ -18,11 +18,11 @@ export const StyledForm = styled.form`
     padding-block: 1%;
     width: 60%;
     margin: 0.5% 0;
-    ::placeholder {
+    &:placeholder {
       color: var(--clr-text1);
       font-family: 'Futura', 'Mr Eaves Sans', 'Futura PT Book';
     }
-    :focus {
+    &:focus {
       outline-width: 0;
     }
     @media (max-width: 750px) {

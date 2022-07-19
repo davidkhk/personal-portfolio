@@ -57,11 +57,11 @@ export const StyledBio = styled.div`
     text-decoration: none;
     padding: 2px;
 
-    :visited {
+    &:visited {
       color: var(--clr-text1);
     }
 
-    :hover {
+    &:hover {
       padding: 2px;
       color: white;
       background-color: black;

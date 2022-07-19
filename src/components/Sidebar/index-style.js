@@ -14,7 +14,7 @@ export const IconsContainer = styled.div`
     transition: 0.3s;
     padding-block: 20%;
 
-    :hover {
+    &:hover {
       color: var(--clr-text2);
     }
   }

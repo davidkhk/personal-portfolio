@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   border-radius: var(--border-radius);
@@ -55,7 +55,7 @@ export const StyledLinks = styled.a`
   border-radius: var(--border-radius);
   transition: all 0.2s ease-in;
 
-  :hover {
+  &:hover {
     color: var(--clr-text2);
     background: var(--clr-fill1);
     border: 1px solid var(--clr-text2);
