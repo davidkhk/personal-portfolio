@@ -1,9 +1,9 @@
 import React from 'react';
 import { Wrapper, Container1, Container2, StyledBio } from './index-style';
-import { AboutData } from '../../utils/data';
+import { AboutData } from '../../../utils/data';
 import TechnicalSkillListItem from './components/TechnicalSkillListItem';
 import SoftSkillListItem from './components/SoftSkilssListItem';
-import { FadeIn } from '../Animation';
+import { FadeIn } from '../../Animation';
 
 const technicalSkill = (props) => {
   return <TechnicalSkillListItem skill={props.skill} icon={props.icon} />;

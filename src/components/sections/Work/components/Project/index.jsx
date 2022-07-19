@@ -1,5 +1,5 @@
 import React from 'react';
-import { FadeIn } from '../../../Animation';
+import { FadeIn } from '../../../../Animation';
 import { Wrapper, StyledDiv, StyledLinks } from './index-style';
 
 const Project = (props) => {

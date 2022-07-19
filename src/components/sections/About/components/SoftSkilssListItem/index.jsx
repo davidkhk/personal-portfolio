@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaCaretRight } from 'react-icons/fa';
-import { FadeIn } from '../../../Animation';
+import { FadeIn } from '../../../../Animation';
 
 const SoftSkillListItem = (props) => {
   return (

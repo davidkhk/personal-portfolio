@@ -7,7 +7,7 @@ import {
   Work,
   Contact,
   Footer,
-} from './components';
+} from './components/sections';
 
 const App = () => {
   return (

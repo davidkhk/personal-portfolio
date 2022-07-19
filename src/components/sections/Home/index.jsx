@@ -1,7 +1,7 @@
 import React from 'react';
 import { Wrapper, StyledDiv } from './index-style';
 import { FaAngleDown } from 'react-icons/fa';
-import { FadeIn } from '../Animation';
+import { FadeIn } from '../../Animation';
 
 const Home = () => {
   return (

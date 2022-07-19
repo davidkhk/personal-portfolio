@@ -1,7 +1,7 @@
 import React from 'react';
 import { Wrapper } from './index-style';
 import Project from './components/Project/index';
-import { projectsData } from '../../utils/data';
+import { projectsData } from '../../../utils/data';
 
 const createProject = (projectsData) => {
   return (
